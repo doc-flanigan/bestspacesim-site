@@ -18,11 +18,11 @@ Incremental agents. Confirm each before proceeding.
     purpleDark: '#7b39df'
     offwhite: '#eef2ee'
     muted: '#7a8f7d'
-- Hero placeholders (8 images)
+- Hero placeholders (12 images)
 - Confirm dev server
 
 ### Agent 2 — Components
-- HeroCarousel.tsx (8 slides)
+- HeroCarousel.tsx (12 slides)
 - GameComparisonCard.tsx: game title, thumbnail placeholder, pros, cons,
   best for, score badge
 - ComparisonTable.tsx: side-by-side feature comparison table
