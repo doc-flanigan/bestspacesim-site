@@ -189,8 +189,8 @@ export default function StarCitizenPage() {
               Sign up with referral STAR-GCQJ-N6NC
             </h2>
             <p className="mt-3 text-offwhite/80">
-              Use the referral code on signup for the standard 5,000 aUEC
-              referral reward — a small but meaningful starter wallet. Free
+              Use the referral code on signup for the standard 50,000 aUEC
+              referral reward — a meaningful starter wallet. Free
               accounts work too; you can add the code on day one.
             </p>
             <div className="mt-5">
