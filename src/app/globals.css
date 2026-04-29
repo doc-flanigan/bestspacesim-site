@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --deep-green: #0d1f16;
+  --green-mid: #142b1e;
+  --purple: #9b59ff;
+  --purple-dark: #7b39df;
+  --offwhite: #eef2ee;
+  --muted: #7a8f7d;
+}
+
+html,
+body {
+  background-color: var(--deep-green);
+  color: var(--offwhite);
+}
+
+body {
+  background-image:
+    radial-gradient(1200px 600px at 50% -10%, rgba(155, 89, 255, 0.18), transparent 60%),
+    radial-gradient(800px 400px at 90% 110%, rgba(155, 89, 255, 0.10), transparent 60%);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .text-pretty {
+    text-wrap: pretty;
+  }
+  .ring-purple {
+    box-shadow: 0 0 0 1px rgba(155, 89, 255, 0.35);
+  }
+}
+
+::selection {
+  background: rgba(155, 89, 255, 0.35);
+  color: #fff;
+}
