@@ -5,7 +5,7 @@ import { ComparisonTable } from '@/components/ComparisonTable';
 import { CTAButton } from '@/components/CTAButton';
 import { SecondaryButton } from '@/components/SecondaryButton';
 import { GAMES } from '@/data/games';
-import { SITE_URL, REFERRAL_URL } from '@/lib/links';
+import { SITE_URL, REFERRAL_URL, FREE_FLY_URL } from '@/lib/links';
 
 export const metadata = {
   title: 'Best Space Sim Games 2026 — Top Picks for New & Veteran Players',
@@ -121,7 +121,7 @@ function TopPick() {
             </div>
             <div className="flex justify-between gap-4">
               <dt className="text-offwhite/70">Free to try</dt>
-              <dd className="text-right text-offwhite/90">Yes — during Free Fly</dd>
+              <dd className="text-right text-offwhite/90">During Free Fly events</dd>
             </div>
             <div className="flex justify-between gap-4">
               <dt className="text-offwhite/70">Player count</dt>
@@ -196,20 +196,20 @@ function FullTable() {
 function WhyStarCitizen() {
   const reasons = [
     {
-      title: 'A single, persistent universe',
-      body: 'Every player you see is in the same simulation. There are no instanced lobbies, no separate servers. When something happens, it actually happened.',
+      title: 'A persistent, connected universe',
+      body: "Star Citizen runs on static server meshing — multiple servers stitched into a shared region of space, so far more players share the same world than in a traditional instanced game. The fully unified single-shard universe is still in development, but what is live already dwarfs the genre.",
     },
     {
-      title: 'Seamless space-to-surface flight',
-      body: 'No loading screens between orbit and the ground. You can fly from quantum travel to a city street to a moon cave without a single cut.',
+      title: 'Seamless atmospheric flight',
+      body: 'You can fly from quantum travel through atmospheric entry to a city street or a moon cave without leaving your cockpit. Cloud Imperium calls this seamless transition a core design goal of the game — and it works in the live alpha.',
     },
     {
       title: 'Real careers, not just missions',
-      body: 'Mining, hauling, salvage, bounty hunting, medical, racing — Star Citizen treats them as careers with their own ships, gear, and skill curves.',
+      body: 'Mining, hauling, salvage, medical, and racing each ship as live career loops in the alpha — with their own ships, gear, and skill curves.',
     },
     {
-      title: 'A genuinely free trial',
-      body: 'Free Fly events let you play the full game with multiple ships at no cost — no demo cliff, no time-limited tutorial. Nothing else in the genre offers this.',
+      title: 'A genuinely free trial — when an event is on',
+      body: "Cloud Imperium runs Free Fly events a few times a year — typically Invictus Launch Week in May and the IAE in November, plus shorter promo windows. During an event, anyone with a free RSI account gets a loaner ship plus a daily rotating ship roster to try.",
     },
   ];
   return (
@@ -261,23 +261,26 @@ function FreeFlyCTA() {
         />
         <div className="relative">
           <p className="text-xs font-semibold uppercase tracking-[0.25em] text-purple">
-            Try it · No purchase required during Free Fly
+            Try it · No purchase required during a Free Fly event
           </p>
           <h2 className="mx-auto mt-3 max-w-2xl text-balance font-display text-3xl font-semibold text-offwhite sm:text-4xl">
-            The fastest way to see if Star Citizen is for you is to actually
-            fly it.
+            The fastest way to see if Star Citizen is for you is to fly it
+            during a Free Fly.
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-offwhite/80">
-            Free Fly events open the game to anyone — multiple ships, full
-            servers, no demo cliff. Use the referral code{' '}
+            Free Fly events run a few times a year — anyone with a free
+            account gets a loaner ship plus a daily rotation of ships to test.
+            Use the referral code{' '}
             <code className="rounded bg-deepGreen/60 px-2 py-0.5 text-purple">
               STAR-GCQJ-N6NC
             </code>{' '}
-            on signup for 5,000 in-game UEC.
+            on signup for the standard 5,000 aUEC referral reward.
           </p>
           <div className="mt-7 flex flex-wrap items-center justify-center gap-3">
             <CTAButton size="lg" />
-            <SecondaryButton size="lg" />
+            <SecondaryButton size="lg" href={FREE_FLY_URL}>
+              See upcoming Free Fly events
+            </SecondaryButton>
           </div>
           <p className="mt-5 text-xs text-muted">
             <a

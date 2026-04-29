@@ -34,10 +34,10 @@ export const GAMES: Game[] = [
       'A persistent, single-shard universe with seamless planetary landings, FPS combat, and a player-driven economy.',
     score: 9.4,
     pros: [
-      'Genuinely seamless space-to-surface flight',
+      'Seamless atmospheric flight is a core design goal — and it works in the live alpha',
       'Largest scale of any current space sim',
-      'Free Fly events let you try the full game at no cost',
-      'Active development with frequent feature drops',
+      'Periodic Free Fly events let you try the game at no cost',
+      'Active development with frequent feature releases',
     ],
     cons: [
       'Still in alpha — expect bugs',
@@ -49,8 +49,8 @@ export const GAMES: Game[] = [
     multiplayer: true,
     singleplayer: false,
     freeToTry: true,
-    priceUSD: 45,
-    priceLabel: '$45 starter pack · Free during Free Fly',
+    priceUSD: 60,
+    priceLabel: 'Starter pack on RSI store · Free during Free Fly events',
     released: '2012 (alpha, ongoing)',
     developer: 'Cloud Imperium Games',
     features: {
@@ -85,8 +85,8 @@ export const GAMES: Game[] = [
     multiplayer: true,
     singleplayer: true,
     freeToTry: false,
-    priceUSD: 25,
-    priceLabel: '$25 base · sales frequent',
+    priceUSD: 20,
+    priceLabel: '~$20 on Steam · sales frequent',
     released: '2014',
     developer: 'Frontier Developments',
     features: {

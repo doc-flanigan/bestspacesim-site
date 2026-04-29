@@ -4,14 +4,14 @@ import { CTAButton } from '@/components/CTAButton';
 import { SecondaryButton } from '@/components/SecondaryButton';
 import { ScoreBadge } from '@/components/ScoreBadge';
 import { GAMES } from '@/data/games';
-import { HUB_URL, REFERRAL_URL } from '@/lib/links';
+import { HUB_URL, REFERRAL_URL, FREE_FLY_URL } from '@/lib/links';
 
 const sc = GAMES.find((g) => g.id === 'star-citizen')!;
 
 export const metadata = {
   title: 'Star Citizen Review 2026 — Is It Worth It?',
   description:
-    'A plain-English Star Citizen review for 2026. What works, what is rough, who it is for — and how to try the full game free during Free Fly.',
+    'A plain-English Star Citizen review for 2026. What works, what is rough, who it is for — and how to try the live game free during a Free Fly event.',
   alternates: { canonical: '/star-citizen' },
 };
 
@@ -19,15 +19,15 @@ const sections = [
   {
     heading: 'What is Star Citizen, really?',
     body: [
-      "Star Citizen is a first-person space simulation built around a single, shared universe. There is no separate matchmaking lobby — every player is in the same simulated solar system. You can fly a ship out of a hangar, take it to orbit, jump to another planet, land in a city, walk into a bar, and meet another human player who flew there themselves.",
-      'It has been in open development since 2012 and is funded by player pledges, which is why it is the highest-funded crowdfunded game in history. It is still officially in alpha — that matters, and we will not pretend otherwise.',
+      "Star Citizen is a first-person space simulation built around a shared persistent universe. Cloud Imperium has rolled out static server meshing, which lets many more players share the same region of space than traditional instanced games allow — so when you fly a ship out of a hangar, take it to orbit, jump to another planet, and walk into a bar, the human you meet there flew there themselves.",
+      'Crowdfunding launched in October 2012, and the game has been in public alpha development since. It is one of the highest-funded crowdfunded games on record. The current live build is Alpha 4.7 — that matters, and we will not pretend otherwise.',
     ],
   },
   {
     heading: 'What the simulation actually does',
     body: [
-      "The headline feature is seamless flight. Other space sims load you into a planet. Star Citizen does not. Quantum travel, atmospheric entry, city flyovers, surface driving — it all happens without a loading screen.",
-      "Underneath that, careers do real work. Mining is a full minigame with prospecting, extraction, and refining. Hauling involves contracts, cargo manifests, and risk of pirate interception by other players. Salvage strips ships down piece by piece. Medical players run rescue ops. Bounty hunters earn off the same target list as everyone else.",
+      "The headline feature is seamless atmospheric flight. Quantum travel, atmospheric entry, city flyovers, surface driving — Cloud Imperium describes it as a single uninterrupted flight, and that flight is live in the current alpha.",
+      "Underneath that, careers do real work. Mining is a full minigame with prospecting, extraction, and refining. Hauling involves contracts, physicalised cargo, and risk of pirate interception by other players. Salvage strips ships down piece by piece. Medical players run rescue ops with dedicated medical ships. Time-trial racing has its own circuits and ships.",
     ],
   },
   {
@@ -45,10 +45,10 @@ const sections = [
     ],
   },
   {
-    heading: 'Try it free before you spend a dollar',
+    heading: 'Try it free during a Free Fly event',
     body: [
-      "The most important thing to know in 2026: Cloud Imperium runs Free Fly events several times a year. During a Free Fly the entire game is open to anyone with an account — multiple ships, full servers, the whole simulation.",
-      "If the idea of Star Citizen interests you at all, wait for a Free Fly and try it. No demo, no time-gated tutorial. You either fall in love with it or you do not.",
+      "Cloud Imperium runs Free Fly events a few times a year — typically Invictus Launch Week in May and the Intergalactic Aerospace Expo in November, plus shorter promo windows in between. During an event, anyone with a free RSI account can play the game's online world: a loaner ship for the duration of the event, plus a daily rotation of additional ships to test fly.",
+      "If the idea of Star Citizen interests you at all, wait for the next Free Fly and try it. No demo, no time-gated tutorial. Outside an event window, you can still create a free account and look around the website — but actual flight is gated to a starter pack purchase or a Free Fly window.",
     ],
   },
 ];
@@ -91,8 +91,8 @@ export default function StarCitizenPage() {
         <p className="mt-5 max-w-2xl text-pretty text-base leading-relaxed text-offwhite/80 sm:text-lg">
           A plain-English review for the people Googling "is Star Citizen
           worth it" in 2026. We cover what it actually does, what is still
-          rough, who it is for — and how to play the full game free during a
-          Free Fly event.
+          rough, who it is for — and how to play the live game free during a
+          scheduled Free Fly event.
         </p>
 
         <div className="mt-7 flex flex-wrap items-center gap-3">
@@ -189,9 +189,9 @@ export default function StarCitizenPage() {
               Sign up with referral STAR-GCQJ-N6NC
             </h2>
             <p className="mt-3 text-offwhite/80">
-              Use the referral code on signup for 5,000 in-game UEC — a
-              meaningful starter wallet. Free Fly accounts work too; you can
-              add the code on day one.
+              Use the referral code on signup for the standard 5,000 aUEC
+              referral reward — a small but meaningful starter wallet. Free
+              accounts work too; you can add the code on day one.
             </p>
             <div className="mt-5">
               <CTAButton>Try Star Citizen Free</CTAButton>
@@ -216,6 +216,17 @@ export default function StarCitizenPage() {
           <Link href="/comparison" className="text-purple hover:text-purple-dark">
             See the full feature-by-feature comparison →
           </Link>
+        </p>
+        <p className="mt-2">
+          Looking for the next Free Fly event?{' '}
+          <a
+            href={FREE_FLY_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="text-purple hover:text-purple-dark"
+          >
+            See the schedule on freeflyevent.com →
+          </a>
         </p>
         <p className="mt-2">
           Heading to{' '}

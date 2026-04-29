@@ -1,7 +1,21 @@
 import type { Metadata } from 'next';
+import { Inter, Orbitron } from 'next/font/google';
 import './globals.css';
 import { NavBar } from '@/components/NavBar';
 import { Footer } from '@/components/Footer';
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+});
+
+const orbitron = Orbitron({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-orbitron',
+  weight: ['500', '600', '700', '800'],
+});
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://bestspacesim.com';
 
@@ -47,8 +61,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className="antialiased">
+    <html lang="en" className={`${inter.variable} ${orbitron.variable}`}>
+      <body className="font-sans antialiased">
         <NavBar />
         <main>{children}</main>
         <Footer />

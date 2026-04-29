@@ -7,3 +7,5 @@ export const HUB_URL =
 
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? 'https://bestspacesim.com';
+
+export const FREE_FLY_URL = 'https://freeflyevent.com';

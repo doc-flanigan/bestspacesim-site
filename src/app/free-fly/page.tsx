@@ -1,30 +1,34 @@
 import { CTAButton } from '@/components/CTAButton';
 import { SecondaryButton } from '@/components/SecondaryButton';
-import { REFERRAL_URL } from '@/lib/links';
+import { REFERRAL_URL, FREE_FLY_URL } from '@/lib/links';
 
 export const metadata = {
-  title: 'Star Citizen Free Fly 2026 — Play the Full Game Free',
+  title: 'Star Citizen Free Fly 2026 — Play the Live Game Free During Events',
   description:
-    'Star Citizen Free Fly events let anyone play the full game with multiple ships at no cost. Here is what to expect, when they happen, and how to get the most from yours.',
+    "Star Citizen Free Fly events open the live game to anyone with a free RSI account during scheduled windows — typically a loaner ship plus a daily ship rotation. Here's what to expect, when they happen, and how to make the most of yours.",
   alternates: { canonical: '/free-fly' },
 };
 
 const points = [
   {
     h: 'What a Free Fly actually is',
-    p: "It is the full game, opened to anyone with a free RSI account. Not a demo. Not a time-limited tutorial. You log into the same simulation paying players are in.",
+    p: "It is the live game, opened to anyone with a free RSI account during a scheduled event window. Not a demo, not a time-limited tutorial — you log into the same persistent universe paying players are in. Outside an event window, flight is gated to a starter pack.",
   },
   {
-    h: 'How long they last',
-    p: 'Free Fly events run for roughly one to two weeks at a time. Cloud Imperium typically schedules several per year — Invictus, IAE, anniversary events, and shorter promo windows.',
+    h: 'How often they run',
+    p: 'A few times a year, not constantly. Cloud Imperium anchors two annual events — Invictus Launch Week in May and the Intergalactic Aerospace Expo in November — and slots in shorter promo windows around them. Check freeflyevent.com for the live schedule.',
+  },
+  {
+    h: 'How long each one lasts',
+    p: 'Most Free Fly windows run between one and two weeks. The annual IAE typically runs the longest — close to two weeks of free access plus a rotating ship roster.',
   },
   {
     h: 'What ships you can fly',
-    p: 'Each Free Fly rotates a fleet of free-to-fly ships. Recent events have unlocked everything from starter ships up through capital-class haulers and combat ships.',
+    p: 'Cloud Imperium provides one loaner ship for the duration of the event, plus a daily rotating manufacturer schedule of additional ships you can test fly. The full ship roster is not all unlocked at once.',
   },
   {
     h: 'How to make the most of yours',
-    p: 'Read a 5-minute beginner primer first. Bring a friend if you can — hauling, mining, and bounty hunting are dramatically more fun in a group. Save your first frustrations for the second day, after the controls click.',
+    p: 'Read a 5-minute beginner primer first. Bring a friend if you can — hauling, mining, and salvage are dramatically more fun in a group. Save your first frustrations for the second day, after the controls click.',
   },
 ];
 
@@ -36,7 +40,7 @@ export default function FreeFlyPage() {
           Free Fly · 2026
         </p>
         <h1 className="mt-3 text-balance font-display text-4xl font-semibold leading-tight text-offwhite sm:text-5xl md:text-6xl">
-          Star Citizen Free Fly — try the full game free
+          Star Citizen Free Fly — try the live game during a scheduled event
         </h1>
         <p className="mt-5 max-w-2xl text-pretty text-base leading-relaxed text-offwhite/80 sm:text-lg">
           The fastest way to know if Star Citizen is your kind of game is to
@@ -71,15 +75,20 @@ export default function FreeFlyPage() {
             Use referral on signup
           </p>
           <h2 className="mt-2 font-display text-2xl font-semibold text-offwhite sm:text-3xl">
-            STAR-GCQJ-N6NC = 5,000 in-game UEC starter wallet
+            STAR-GCQJ-N6NC = 5,000 aUEC referral reward
           </h2>
           <p className="mt-3 text-offwhite/80">
-            Free Fly accounts can apply the referral code on day one. It is a
-            small but meaningful head start.
+            Free Fly accounts can apply the referral code on day one for the
+            standard 5,000 aUEC referral reward — the in-game starter
+            currency. Cloud Imperium also runs occasional referral bonus
+            promotions (free ships or vehicles layered on top); those are
+            event-specific and not guaranteed.
           </p>
           <div className="mt-5 flex flex-wrap gap-3">
             <CTAButton />
-            <SecondaryButton />
+            <SecondaryButton href={FREE_FLY_URL}>
+              See upcoming Free Fly events
+            </SecondaryButton>
           </div>
           <p className="mt-3 text-xs text-muted">
             <a

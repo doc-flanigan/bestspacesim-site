@@ -15,8 +15,8 @@ const config: Config = {
         muted: '#7a8f7d',
       },
       fontFamily: {
-        sans: ['var(--font-sans)', 'system-ui', 'sans-serif'],
-        display: ['var(--font-display)', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
+        display: ['var(--font-orbitron)', 'system-ui', 'sans-serif'],
       },
       backgroundImage: {
         'starfield':
