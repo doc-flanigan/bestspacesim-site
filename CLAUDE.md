@@ -6,6 +6,14 @@ or "best space simulation game." Reviews multiple space sims objectively but
 naturally positions Star Citizen as the top pick for players wanting a living
 universe. Funnels to o7citizen.com and referral signup.
 
+## Quick Reference
+```
+Referral code:  STAR-GCQJ-N6NC
+Enlist URL:     https://www.robertsspaceindustries.com/enlist?referral=STAR-GCQJ-N6NC
+Hub:            https://dayonecitizen.com
+Conventions:    E:\Claude Code\sc-portfolio\SHARED_CONVENTIONS.md
+```
+
 ## Agentic Build Instructions
 Incremental agents. Confirm each before proceeding.
 
@@ -28,7 +36,7 @@ Incremental agents. Confirm each before proceeding.
 - ComparisonTable.tsx: side-by-side feature comparison table
 - CTAButton.tsx: "Try Star Citizen Free During Free Fly"
   → https://www.robertsspaceindustries.com/enlist?referral=STAR-GCQJ-N6NC
-- SecondaryButton.tsx: "Star Citizen Beginner's Guide" → https://o7citizen.com
+- SecondaryButton.tsx: "Star Citizen Beginner's Guide" → https://dayonecitizen.com
 - Footer.tsx: standard footer
 - NavBar.tsx: links: Home, Comparison, Star Citizen, Free Fly Events,
   Beginner's Guide
@@ -54,7 +62,7 @@ Incremental agents. Confirm each before proceeding.
 ### Agent 4 — Star Citizen Page (/star-citizen)
   - SEO: title="Star Citizen Review 2026 — Is It Worth It?"
   - Deep dive review
-  - "New Player?" CTA → o7citizen.com
+  - "New Player?" CTA → dayonecitizen.com
   - Referral code CTA
 
 ### Agent 5 — Comparison Page (/comparison)
@@ -66,11 +74,6 @@ Incremental agents. Confirm each before proceeding.
   - ItemList schema for game rankings
   - npm run build must pass
 
-## Referral URL
-https://www.robertsspaceindustries.com/enlist?referral=STAR-GCQJ-N6NC
-
-## Hub Link: https://o7citizen.com
-
 ## Color Palette
   --deep-green: #0d1f16
   --green-mid: #142b1e
@@ -79,6 +82,6 @@ https://www.robertsspaceindustries.com/enlist?referral=STAR-GCQJ-N6NC
   --offwhite: #eef2ee
   --muted: #7a8f7d
 
-## Footer Spec: Standard three-section footer
-
-## Commit Convention: feat/fix/seo/docs: [description]
+## Network Conventions
+See `E:\Claude Code\sc-portfolio\SHARED_CONVENTIONS.md` for footer spec,
+tone rules, commit convention, tech stack, and agentic build pattern.
