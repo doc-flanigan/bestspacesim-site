@@ -4,7 +4,7 @@
 Comparison and recommendation site targeting people searching "best space sim"
 or "best space simulation game." Reviews multiple space sims objectively but
 naturally positions Star Citizen as the top pick for players wanting a living
-universe. Funnels to o7citizen.com and referral signup.
+universe. Funnels to dayonecitizen.com and referral signup.
 
 ## Quick Reference
 ```
