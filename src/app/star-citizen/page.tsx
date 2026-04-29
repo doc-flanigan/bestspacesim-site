@@ -190,8 +190,8 @@ export default function StarCitizenPage() {
             </h2>
             <p className="mt-3 text-offwhite/80">
               Use the referral code on signup for the standard 50,000 aUEC
-              referral reward — a meaningful starter wallet. Free
-              accounts work too; you can add the code on day one.
+              enlistment bonus — a meaningful starter wallet. Free accounts
+              work too; you can add the code on day one.
             </p>
             <div className="mt-5">
               <CTAButton>Try Star Citizen Free</CTAButton>

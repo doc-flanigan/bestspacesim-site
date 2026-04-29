@@ -274,7 +274,7 @@ function FreeFlyCTA() {
             <code className="rounded bg-deepGreen/60 px-2 py-0.5 text-purple">
               STAR-GCQJ-N6NC
             </code>{' '}
-            on signup for the standard 50,000 aUEC referral reward.
+            on signup for the standard 50,000 aUEC enlistment bonus.
           </p>
           <div className="mt-7 flex flex-wrap items-center justify-center gap-3">
             <CTAButton size="lg" />

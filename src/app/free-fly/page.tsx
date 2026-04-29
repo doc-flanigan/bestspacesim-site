@@ -75,11 +75,11 @@ export default function FreeFlyPage() {
             Use referral on signup
           </p>
           <h2 className="mt-2 font-display text-2xl font-semibold text-offwhite sm:text-3xl">
-            STAR-GCQJ-N6NC = 50,000 aUEC referral reward
+            STAR-GCQJ-N6NC = 50,000 aUEC enlistment bonus
           </h2>
           <p className="mt-3 text-offwhite/80">
             Free Fly accounts can apply the referral code on day one for the
-            standard 50,000 aUEC referral reward — the in-game starter
+            standard 50,000 aUEC enlistment bonus — the in-game starter
             currency. Cloud Imperium also runs occasional referral bonus
             promotions (free ships or vehicles layered on top); those are
             event-specific and not guaranteed.
