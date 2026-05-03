@@ -16,7 +16,7 @@ const points = [
   },
   {
     h: 'How often they run',
-    p: 'A few times a year, not constantly. Cloud Imperium anchors two annual events — Invictus Launch Week in May and the Intergalactic Aerospace Expo in November — and slots in shorter promo windows around them. Check freeflyevent.com for the live schedule.',
+    p: 'A few times a year, not constantly. Cloud Imperium anchors two annual events — Drake DefenseCon (formerly Invictus Launch Week) in May and the Intergalactic Aerospace Expo in November — and slots in shorter promo windows around them. Check freeflyevent.com for the live schedule.',
   },
   {
     h: 'How long each one lasts',
