@@ -1,4 +1,6 @@
-import { REFERRAL_URL } from '@/lib/links';
+'use client';
+import { useState, useEffect } from 'react';
+import { getRotatedReferralUrl, FALLBACK_REFERRAL_URL } from '@/lib/referral-rotator';
 
 type Props = {
   children?: React.ReactNode;
@@ -11,13 +13,16 @@ export function CTAButton({
   className = '',
   size = 'md',
 }: Props) {
+  const [href, setHref] = useState(FALLBACK_REFERRAL_URL);
+  useEffect(() => { setHref(getRotatedReferralUrl()); }, []);
+
   const sizeCls =
     size === 'lg'
       ? 'px-7 py-4 text-base sm:text-lg'
       : 'px-5 py-3 text-sm sm:text-base';
   return (
     <a
-      href={REFERRAL_URL}
+      href={href}
       target="_blank"
       rel="noreferrer"
       className={`group inline-flex items-center justify-center gap-2 rounded-full bg-purple ${sizeCls} font-semibold text-white shadow-glow transition hover:bg-purple-dark focus:outline-none focus-visible:ring-2 focus-visible:ring-purple focus-visible:ring-offset-2 focus-visible:ring-offset-deepGreen ${className}`}
