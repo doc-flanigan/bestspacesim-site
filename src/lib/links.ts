@@ -3,7 +3,7 @@ export const REFERRAL_URL =
   'https://www.robertsspaceindustries.com/enlist?referral=STAR-GCQJ-N6NC';
 
 export const HUB_URL =
-  process.env.NEXT_PUBLIC_HUB_URL ?? 'https://o7citizen.com';
+  process.env.NEXT_PUBLIC_HUB_URL ?? 'https://dayonecitizen.com';
 
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? 'https://bestspacesim.com';

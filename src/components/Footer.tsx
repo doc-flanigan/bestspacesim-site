@@ -18,7 +18,7 @@ export function Footer() {
           </div>
           <p className="mt-3 max-w-xs text-sm text-muted">
             Independent rankings of the best space simulation games of 2026.
-            Part of the o7citizen.com fan-site network.
+            Part of the dayonecitizen.com fan-site network.
           </p>
         </div>
 
@@ -62,7 +62,7 @@ export function Footer() {
                 rel="noreferrer"
                 className="hover:text-offwhite"
               >
-                Plain-English beginner guide → o7citizen.com
+                Plain-English beginner guide → dayonecitizen.com
               </a>
             </li>
             <li>

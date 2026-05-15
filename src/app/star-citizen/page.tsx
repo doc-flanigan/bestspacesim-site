@@ -171,13 +171,13 @@ export default function StarCitizenPage() {
               Start with the plain-English beginner guide
             </h2>
             <p className="mt-3 text-offwhite/80">
-              Our sister site o7citizen.com walks new players through their
+              Our sister site dayonecitizen.com walks new players through their
               first hour — controls, careers, where to start, and how to ask
               for help without getting flamed.
             </p>
             <div className="mt-5">
               <SecondaryButton>
-                Open the beginner's guide → o7citizen.com
+                Open the beginner's guide → dayonecitizen.com
               </SecondaryButton>
             </div>
           </div>
@@ -236,7 +236,7 @@ export default function StarCitizenPage() {
             rel="noreferrer"
             className="text-purple hover:text-purple-dark"
           >
-            o7citizen.com
+            dayonecitizen.com
           </a>{' '}
           for the beginner network instead.
         </p>
