@@ -87,7 +87,10 @@ export function Footer() {
           </p>
           <p className="max-w-md text-right">
             Not affiliated with Cloud Imperium Games or any other studio. All
-            game names and trademarks belong to their respective owners.
+            game names and trademarks belong to their respective owners.{' '}
+            Affiliate disclosure: This site uses Star Citizen referral links.
+            Referral code owners may receive an in-game bonus if you sign up.
+            Your rewards are not affected.
           </p>
         </div>
       </div>
