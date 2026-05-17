@@ -5,7 +5,7 @@ import { ComparisonTable } from '@/components/ComparisonTable';
 import { CTAButton } from '@/components/CTAButton';
 import { SecondaryButton } from '@/components/SecondaryButton';
 import { GAMES } from '@/data/games';
-import { SITE_URL, REFERRAL_URL, FREE_FLY_URL } from '@/lib/links';
+import { SITE_URL, FREE_FLY_URL } from '@/lib/links';
 
 export const metadata = {
   title: 'Best Space Sim Games 2026 — Top Picks for New & Veteran Players',
@@ -283,14 +283,7 @@ function FreeFlyCTA() {
             </SecondaryButton>
           </div>
           <p className="mt-5 text-xs text-muted">
-            <a
-              href={REFERRAL_URL}
-              target="_blank"
-              rel="noreferrer"
-              className="underline-offset-4 hover:underline"
-            >
-              robertsspaceindustries.com/enlist?referral=STAR-GCQJ-N6NC
-            </a>
+            robertsspaceindustries.com/enlist?referral=STAR-GCQJ-N6NC
           </p>
         </div>
       </div>

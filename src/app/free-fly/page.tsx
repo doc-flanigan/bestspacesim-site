@@ -1,6 +1,6 @@
 import { CTAButton } from '@/components/CTAButton';
 import { SecondaryButton } from '@/components/SecondaryButton';
-import { REFERRAL_URL, FREE_FLY_URL } from '@/lib/links';
+import { FREE_FLY_URL } from '@/lib/links';
 
 export const metadata = {
   title: 'Star Citizen Free Fly 2026 — Play the Live Game Free During Events',
@@ -91,14 +91,7 @@ export default function FreeFlyPage() {
             </SecondaryButton>
           </div>
           <p className="mt-3 text-xs text-muted">
-            <a
-              href={REFERRAL_URL}
-              target="_blank"
-              rel="noreferrer"
-              className="underline-offset-4 hover:underline"
-            >
-              robertsspaceindustries.com/enlist?referral=STAR-GCQJ-N6NC
-            </a>
+            robertsspaceindustries.com/enlist?referral=STAR-GCQJ-N6NC
           </p>
         </div>
       </section>

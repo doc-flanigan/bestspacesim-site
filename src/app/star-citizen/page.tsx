@@ -4,7 +4,7 @@ import { CTAButton } from '@/components/CTAButton';
 import { SecondaryButton } from '@/components/SecondaryButton';
 import { ScoreBadge } from '@/components/ScoreBadge';
 import { GAMES } from '@/data/games';
-import { HUB_URL, REFERRAL_URL, FREE_FLY_URL } from '@/lib/links';
+import { HUB_URL, FREE_FLY_URL } from '@/lib/links';
 
 const sc = GAMES.find((g) => g.id === 'star-citizen')!;
 
@@ -197,14 +197,7 @@ export default function StarCitizenPage() {
               <CTAButton>Try Star Citizen Free</CTAButton>
             </div>
             <p className="mt-3 text-xs text-muted">
-              <a
-                href={REFERRAL_URL}
-                target="_blank"
-                rel="noreferrer"
-                className="underline-offset-4 hover:underline"
-              >
-                robertsspaceindustries.com/enlist?referral=STAR-GCQJ-N6NC
-              </a>
+              robertsspaceindustries.com/enlist?referral=STAR-GCQJ-N6NC
             </p>
           </div>
         </div>

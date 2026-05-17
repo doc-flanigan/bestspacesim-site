@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { HUB_URL, REFERRAL_URL } from '@/lib/links';
+import { HUB_URL } from '@/lib/links';
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -65,15 +65,8 @@ export function Footer() {
                 Plain-English beginner guide → dayonecitizen.com
               </a>
             </li>
-            <li>
-              <a
-                href={REFERRAL_URL}
-                target="_blank"
-                rel="noreferrer"
-                className="hover:text-offwhite"
-              >
-                Sign up with referral STAR-GCQJ-N6NC
-              </a>
+            <li className="text-muted">
+              Referral code: STAR-GCQJ-N6NC
             </li>
           </ul>
         </div>
