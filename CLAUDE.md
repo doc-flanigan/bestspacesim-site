@@ -104,3 +104,25 @@ Added 2026-05-17. Every referral CTA click fires a background POST to `/api/log`
 - [ ] Click CTA **with** adblocker enabled → Sheet row appears within 5s
 - [ ] Click CTA **with** adblocker enabled → Discord embed appears in #referral-clicks
 - [ ] Click CTA **without** adblocker → same as above
+
+---
+
+## SEO
+
+**Network role:** Comparison/awareness satellite
+**Search engine:** Both
+
+**Primary keywords:**
+- "best space sim game"
+- "best space simulation game 2026"
+- "star citizen vs elite dangerous"
+- "top space sim games"
+
+**Cross-links this site must send (body copy only):**
+- → dayonecitizen.com: "Getting started with Star Citizen" CTA after Star Citizen review section
+- → freeflyevent.com: "Try Star Citizen free during Free Fly events"
+
+**Do not:**
+- Place cross-portfolio links in footers or link lists — editorial/body copy only
+
+**Full strategy:** `E:\Claude Code\sc-portfolio\docs\seo\README.md`
