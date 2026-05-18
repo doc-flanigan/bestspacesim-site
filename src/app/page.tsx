@@ -242,11 +242,37 @@ function WhyStarCitizen() {
         ))}
       </div>
 
+      <p className="mt-6 text-sm text-offwhite/80">
+        Star Citizen runs{' '}
+        <a
+          href="https://freeflyevent.com"
+          className="text-purple underline hover:opacity-80"
+          target="_blank"
+          rel="noopener"
+        >
+          Free Fly events
+        </a>{' '}
+        where you can play for free for a limited time before committing.
+      </p>
+
       <div className="mt-8 flex flex-wrap gap-3">
         <SecondaryButton href="/star-citizen" external={false}>
           Read the full Star Citizen review
         </SecondaryButton>
       </div>
+
+      <p className="mt-4 text-sm text-offwhite/80">
+        Ready to try it?{' '}
+        <a
+          href="https://dayonecitizen.com"
+          className="text-purple underline hover:opacity-80"
+          target="_blank"
+          rel="noopener"
+        >
+          DayOneCitizen.com
+        </a>{' '}
+        is the plain-English getting-started guide for new players.
+      </p>
     </section>
   );
 }
