@@ -42,11 +42,7 @@ export function Footer() {
                 Star Citizen review
               </Link>
             </li>
-            <li>
-              <Link href="/free-fly" className="hover:text-offwhite">
-                Free Fly events
-              </Link>
-            </li>
+
           </ul>
         </div>
 

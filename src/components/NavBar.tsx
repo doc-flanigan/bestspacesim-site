@@ -5,8 +5,7 @@ const links = [
   { href: '/', label: 'Home' },
   { href: '/comparison', label: 'Comparison' },
   { href: '/star-citizen', label: 'Star Citizen' },
-  { href: '/free-fly', label: 'Free Fly Events' },
-  { href: HUB_URL, label: "Beginner's Guide", external: true },
+{ href: HUB_URL, label: "Beginner's Guide", external: true },
 ];
 
 export function NavBar() {

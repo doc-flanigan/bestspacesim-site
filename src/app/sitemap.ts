@@ -3,7 +3,7 @@ import { SITE_URL } from '@/lib/links';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
-  const routes = ['', '/comparison', '/star-citizen', '/free-fly'];
+  const routes = ['', '/comparison', '/star-citizen'];
   return routes.map((path) => ({
     url: `${SITE_URL}${path}`,
     lastModified: now,
