@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { HUB_URL } from '@/lib/links';
 
 export function Footer() {
@@ -51,16 +52,6 @@ export function Footer() {
             New to Star Citizen?
           </h3>
           <ul className="mt-3 space-y-2 text-sm text-muted">
-            <li>
-              <a
-                href={HUB_URL}
-                target="_blank"
-                rel="noreferrer"
-                className="hover:text-offwhite"
-              >
-                Plain-English beginner guide → dayonecitizen.com
-              </a>
-            </li>
             <li className="text-muted">
               Referral code: STAR-GCQJ-N6NC
             </li>
@@ -77,11 +68,19 @@ export function Footer() {
           <p className="max-w-md text-right">
             Not affiliated with Cloud Imperium Games or any other studio. All
             game names and trademarks belong to their respective owners.{' '}
-            Affiliate disclosure: This site uses Star Citizen referral links.
-            Referral code owners may receive an in-game bonus if you sign up.
-            Your rewards are not affected.
+            Affiliate disclosure: If you create a Star Citizen account using
+            referral code STAR-GCQJ-N6NC, the site owner may receive an
+            in-game bonus. Your 50,000 aUEC new-player bonus is not affected.
           </p>
         </div>
+      </div>
+      <div className="mx-auto flex max-w-6xl justify-center px-4 pb-6 sm:px-6">
+        <Image
+          src="/images/made-by-community.png"
+          alt="Made by the Star Citizen Community"
+          width={120}
+          height={40}
+        />
       </div>
     </footer>
   );
