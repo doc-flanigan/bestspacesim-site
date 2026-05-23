@@ -71,6 +71,45 @@ export default function HomePage() {
 
       <WhyStarCitizen />
 
+      {/* Getting Started with Star Citizen */}
+      <section className="py-16 px-4" style={{ backgroundColor: '#0d1f16' }}>
+        <div className="mx-auto max-w-3xl">
+          <h2 className="text-2xl font-bold mb-4" style={{ color: '#eef2ee' }}>
+            Ready to try it? Here&apos;s where to start.
+          </h2>
+          <p className="mb-4" style={{ color: '#7a8f7d' }}>
+            The cheapest way in is a{' '}
+            <strong style={{ color: '#eef2ee' }}>starter package (~$45–$55)</strong>.
+            For most new players, the{' '}
+            <strong style={{ color: '#eef2ee' }}>Avenger Titan (~$55)</strong> is the best
+            first ship — versatile enough for every beginner mission type, good cargo
+            capacity, and comfortable to fly. The Aurora Mk II (~$45) works if you want
+            the absolute minimum to get in the door.
+          </p>
+          <p className="mb-6" style={{ color: '#7a8f7d' }}>
+            Before you buy: use a referral code when you create your account and you&apos;ll
+            get{' '}
+            <strong style={{ color: '#eef2ee' }}>50,000 bonus UEC</strong>{' '}
+            added automatically. Use code{' '}
+            <strong style={{ color: '#eef2ee' }}>STAR-GCQJ-N6NC</strong>.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3 items-start">
+            <CTAButton trackingLabel="Getting Started Section">
+              Enlist with Referral Code
+            </CTAButton>
+            <a
+              href="https://dayonecitizen.com/day-one-citizen/starter-package"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center text-sm underline underline-offset-4 hover:opacity-80 transition-opacity"
+              style={{ color: '#7a8f7d' }}
+            >
+              Compare all starter ships →
+            </a>
+          </div>
+        </div>
+      </section>
+
       <FreeFlyCTA />
     </>
   );
