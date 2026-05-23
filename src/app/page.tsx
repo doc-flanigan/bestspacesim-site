@@ -282,16 +282,16 @@ function WhyStarCitizen() {
       </div>
 
       <p className="mt-6 text-sm text-offwhite/80">
-        Star Citizen runs{' '}
+        Star Citizen runs Free Fly events where you can play for free for a limited time before committing. Check{' '}
         <a
-          href="https://freeflyevent.com"
+          href="https://dayonecitizen.com"
           className="text-purple underline hover:opacity-80"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
         >
-          Free Fly events
+          dayonecitizen.com
         </a>{' '}
-        where you can play for free for a limited time before committing.
+        for the latest schedule and new player guides.
       </p>
 
       <div className="mt-8 flex flex-wrap gap-3">

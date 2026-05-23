@@ -4,9 +4,9 @@ import { SecondaryButton } from '@/components/SecondaryButton';
 import { GAMES } from '@/data/games';
 
 export const metadata = {
-  title: 'Space Sim Comparison 2026 — Filter by Price, Multiplayer, Free Trial',
+  title: 'Space Sim Comparison 2026 — Filter by Price & Multiplayer',
   description:
-    'Compare every major space sim of 2026 side by side. Filter by multiplayer, singleplayer, free-to-try, and price to find the right space simulation game for you.',
+    'Compare every major space sim of 2026 side by side. Filter by multiplayer, singleplayer, free-to-try, and price to find the right game for you.',
   alternates: { canonical: '/comparison' },
 };
 

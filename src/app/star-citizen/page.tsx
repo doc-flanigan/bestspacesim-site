@@ -4,7 +4,7 @@ import { CTAButton } from '@/components/CTAButton';
 import { SecondaryButton } from '@/components/SecondaryButton';
 import { ScoreBadge } from '@/components/ScoreBadge';
 import { GAMES } from '@/data/games';
-import { HUB_URL, FREE_FLY_URL } from '@/lib/links';
+import { HUB_URL } from '@/lib/links';
 
 const sc = GAMES.find((g) => g.id === 'star-citizen')!;
 
@@ -211,15 +211,16 @@ export default function StarCitizenPage() {
           </Link>
         </p>
         <p className="mt-2">
-          Looking for the next Free Fly event?{' '}
+          Looking for the next Free Fly event? Check{' '}
           <a
-            href={FREE_FLY_URL}
+            href={HUB_URL}
             target="_blank"
             rel="noreferrer"
             className="text-purple hover:text-purple-dark"
           >
-            See the schedule on freeflyevent.com →
-          </a>
+            dayonecitizen.com
+          </a>{' '}
+          for the latest Free Fly schedule and new player guides.
         </p>
         <p className="mt-2">
           Heading to{' '}

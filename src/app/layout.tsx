@@ -23,7 +23,7 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://bestspacesim.com';
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Best Space Sim Games 2026 — Top Picks for New & Veteran Players',
+    default: 'Best Space Sim Games 2026 — Top Picks Ranked',
     template: '%s · bestspacesim.com',
   },
   description:
