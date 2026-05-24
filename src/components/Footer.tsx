@@ -65,7 +65,7 @@ export function Footer() {
             © {year} bestspacesim.com · An unofficial Star Citizen fan site by
             Doc_Flanigan.
           </p>
-          <p className="max-w-md text-right">
+          <p className="max-w-md sm:text-right">
             Not affiliated with Cloud Imperium Games or any other studio. All
             game names and trademarks belong to their respective owners.{' '}
             Affiliate disclosure: If you create a Star Citizen account using
