@@ -2,6 +2,7 @@ import { ComparisonExplorer } from '@/components/ComparisonExplorer';
 import { CTAButton } from '@/components/CTAButton';
 import { SecondaryButton } from '@/components/SecondaryButton';
 import { GAMES } from '@/data/games';
+import { BreadcrumbsJsonLd } from '@/components/BreadcrumbsJsonLd';
 
 export const metadata = {
   title: 'Space Sim Comparison 2026 — Filter by Price & Multiplayer',
@@ -13,6 +14,12 @@ export const metadata = {
 export default function ComparisonPage() {
   return (
     <>
+      <BreadcrumbsJsonLd
+        items={[
+          { name: 'Home', url: '/' },
+          { name: 'Comparison', url: '/comparison' },
+        ]}
+      />
       <section className="mx-auto max-w-6xl px-4 pt-12 sm:px-6 sm:pt-16">
         <p className="text-xs font-semibold uppercase tracking-[0.25em] text-purple">
           Comparison · 2026

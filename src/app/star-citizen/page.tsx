@@ -5,6 +5,7 @@ import { SecondaryButton } from '@/components/SecondaryButton';
 import { ScoreBadge } from '@/components/ScoreBadge';
 import { GAMES } from '@/data/games';
 import { HUB_URL } from '@/lib/links';
+import { BreadcrumbsJsonLd } from '@/components/BreadcrumbsJsonLd';
 
 const sc = GAMES.find((g) => g.id === 'star-citizen')!;
 
@@ -76,6 +77,12 @@ export default function StarCitizenPage() {
 
   return (
     <>
+      <BreadcrumbsJsonLd
+        items={[
+          { name: 'Home', url: '/' },
+          { name: 'Star Citizen', url: '/star-citizen' },
+        ]}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewJsonLd) }}
