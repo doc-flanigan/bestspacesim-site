@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { ComparisonExplorer } from '@/components/ComparisonExplorer';
 import { CTAButton } from '@/components/CTAButton';
 import { SecondaryButton } from '@/components/SecondaryButton';
@@ -40,6 +41,26 @@ export default function ComparisonPage() {
 
       <section className="mx-auto mt-12 max-w-6xl px-4 sm:px-6">
         <ComparisonExplorer games={GAMES} />
+      </section>
+
+      <section className="mx-auto mt-14 max-w-6xl px-4 pb-4 sm:px-6">
+        <h2 className="font-display text-2xl font-semibold text-offwhite sm:text-3xl">
+          Popular head-to-head matchups
+        </h2>
+        <p className="mt-3 max-w-2xl text-base leading-relaxed text-offwhite/80">
+          Deciding between two games? See how Star Citizen stacks up one-on-one.
+        </p>
+        <div className="mt-5 flex flex-wrap gap-3">
+          {GAMES.filter((g) => g.id !== 'star-citizen').map((g) => (
+            <Link
+              key={g.id}
+              href={`/star-citizen-vs/${g.id}`}
+              className="rounded-full border border-purple/40 px-4 py-2 text-sm text-offwhite/85 transition hover:border-purple hover:bg-purple/10"
+            >
+              Star Citizen vs {g.title} →
+            </Link>
+          ))}
+        </div>
       </section>
     </>
   );

@@ -1,9 +1,13 @@
 import type { MetadataRoute } from 'next';
 import { SITE_URL } from '@/lib/links';
+import { GAMES } from '@/data/games';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
-  const routes = ['', '/comparison', '/star-citizen'];
+  const versusRoutes = GAMES.filter((g) => g.id !== 'star-citizen').map(
+    (g) => `/star-citizen-vs/${g.id}`,
+  );
+  const routes = ['', '/comparison', '/star-citizen', ...versusRoutes];
   return routes.map((path) => ({
     url: `${SITE_URL}${path}`,
     lastModified: now,
