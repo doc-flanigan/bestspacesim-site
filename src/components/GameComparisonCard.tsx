@@ -24,9 +24,13 @@ export function GameComparisonCard({ game, highlight = false }: Props) {
 
       <div
         aria-hidden
-        className="mb-5 flex aspect-[16/9] items-center justify-center rounded-xl border border-greenMid bg-deepGreen/60 text-xs uppercase tracking-widest text-muted"
+        className="relative mb-5 flex aspect-[16/9] items-center justify-center overflow-hidden rounded-xl border border-greenMid bg-gradient-to-br from-purple/25 via-greenMid/40 to-deepGreen"
       >
-        <span>{game.title} · cover</span>
+        <div className="absolute -right-6 -top-8 h-24 w-24 rounded-full bg-purple/20 blur-2xl" />
+        <div className="absolute -bottom-10 -left-6 h-24 w-24 rounded-full bg-purple/10 blur-2xl" />
+        <span className="relative px-4 text-center font-display text-lg font-semibold text-offwhite/95 sm:text-xl">
+          {game.title}
+        </span>
       </div>
 
       <div className="flex items-start justify-between gap-3">
