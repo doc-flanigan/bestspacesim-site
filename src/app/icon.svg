@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="bestspacesim">
+  <defs>
+    <radialGradient id="bssPlanet" cx="38%" cy="34%" r="75%">
+      <stop offset="0%" stop-color="#b98cff"/>
+      <stop offset="60%" stop-color="#9b59ff"/>
+      <stop offset="100%" stop-color="#7b39df"/>
+    </radialGradient>
+  </defs>
+  <rect width="32" height="32" rx="7" fill="#0d1f16"/>
+  <ellipse cx="16" cy="16" rx="13" ry="4.6" fill="none" stroke="#9b59ff" stroke-width="1.7" transform="rotate(-25 16 16)" opacity="0.9"/>
+  <circle cx="16" cy="16" r="8" fill="url(#bssPlanet)"/>
+  <circle cx="24.5" cy="7.5" r="1" fill="#eef2ee"/>
+</svg>

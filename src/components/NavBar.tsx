@@ -21,9 +21,14 @@ export function NavBar() {
           href="/"
           className="flex items-center gap-2 text-offwhite transition hover:text-purple"
         >
-          <span
-            aria-hidden
-            className="inline-block h-2.5 w-2.5 rounded-full bg-purple shadow-[0_0_12px_rgba(155,89,255,0.9)]"
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/logo.svg"
+            alt=""
+            aria-hidden="true"
+            width={26}
+            height={26}
+            className="h-6 w-6 drop-shadow-[0_0_10px_rgba(155,89,255,0.55)]"
           />
           <span className="font-display text-base font-semibold tracking-tight sm:text-lg">
             bestspacesim

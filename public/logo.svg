@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="bestspacesim logo">
+  <defs>
+    <radialGradient id="bssMark" cx="38%" cy="34%" r="75%">
+      <stop offset="0%" stop-color="#b98cff"/>
+      <stop offset="60%" stop-color="#9b59ff"/>
+      <stop offset="100%" stop-color="#7b39df"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="16" cy="16" rx="14" ry="5" fill="none" stroke="#9b59ff" stroke-width="1.8" transform="rotate(-25 16 16)" opacity="0.9"/>
+  <circle cx="16" cy="16" r="8.5" fill="url(#bssMark)"/>
+  <circle cx="25" cy="7" r="1.1" fill="#eef2ee"/>
+</svg>
