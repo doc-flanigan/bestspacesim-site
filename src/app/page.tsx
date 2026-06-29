@@ -228,6 +228,22 @@ function FullTable() {
       <div className="mt-8">
         <ComparisonTable games={GAMES} />
       </div>
+      <div className="mt-10">
+        <h3 className="text-sm font-semibold uppercase tracking-wider text-purple">
+          Head-to-head matchups
+        </h3>
+        <div className="mt-3 flex flex-wrap gap-3">
+          {GAMES.filter((g) => g.id !== 'star-citizen').map((g) => (
+            <Link
+              key={g.id}
+              href={`/star-citizen-vs/${g.id}`}
+              className="rounded-full border border-purple/40 px-4 py-2 text-sm text-offwhite/85 transition hover:border-purple hover:bg-purple/10"
+            >
+              Star Citizen vs {g.title} →
+            </Link>
+          ))}
+        </div>
+      </div>
     </section>
   );
 }
