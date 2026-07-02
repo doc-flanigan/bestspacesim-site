@@ -1,0 +1,28 @@
+# Best Space Sim
+
+> Unofficial fan-run comparison site that ranks the best space simulation games of 2026 — Star Citizen, Elite Dangerous, No Man's Sky, EVE Online, X4: Foundations, and Starfield — for new and veteran players deciding what to play. Reviews each game on scale, flight, combat, economy, and price, and explains why Star Citizen tops the list for players who want a living universe. Not affiliated with or endorsed by Cloud Imperium Games or Roberts Space Industries.
+
+## Pages
+
+- [Best Space Sim Games 2026](https://bestspacesim.com/): Ranked overview of the top space sims with pros, cons, scores, and our top pick.
+- [Comparison Table](https://bestspacesim.com/comparison): Side-by-side feature matrix across all games, filterable by multiplayer, single-player, free-to-try, and price.
+- [Star Citizen Review](https://bestspacesim.com/star-citizen): Deep-dive review of Star Citizen and who it is for.
+- [Star Citizen vs Elite Dangerous](https://bestspacesim.com/star-citizen-vs/elite-dangerous): Head-to-head comparison of the two flagship space sims.
+- [Star Citizen vs No Man's Sky](https://bestspacesim.com/star-citizen-vs/no-mans-sky): Living universe versus relaxed procedural sandbox.
+- [Star Citizen vs EVE Online](https://bestspacesim.com/star-citizen-vs/eve-online): Cockpit-perspective universe versus the classic single-shard MMO.
+- [Star Citizen vs X4: Foundations](https://bestspacesim.com/star-citizen-vs/x4-foundations): Persistent multiplayer universe versus the solo empire sandbox.
+- [Star Citizen vs Starfield](https://bestspacesim.com/star-citizen-vs/starfield): Seamless space sim versus Bethesda's space-themed RPG.
+
+## Key facts
+
+- The site ranks six space sims: Star Citizen (top pick), EVE Online, Elite Dangerous, X4: Foundations, No Man's Sky, and Starfield.
+- Star Citizen is developed by Cloud Imperium Games and has been in ongoing alpha; periodic Free Fly events let new players try it at no cost.
+- Rankings weigh living-universe depth, flight and ship combat, FPS combat, planetary landing, economy, co-op, and mod support.
+- EVE Online and Star Citizen both use a single-shard persistent universe; X4 and Starfield are single-player.
+- Reviews are opinion-based fan editorial, not official ratings.
+
+## Related
+
+- [dayonecitizen.com](https://dayonecitizen.com): Plain-English getting-started guide for brand-new Star Citizen players.
+- [freeflyevent.com](https://freeflyevent.com): Star Citizen Free Fly event tracker — when you can try the game for free.
+- [iheldtheline.com](https://iheldtheline.com): Squadron 42 release-date tracking, developer news, and FAQ.
