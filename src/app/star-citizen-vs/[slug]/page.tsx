@@ -5,6 +5,7 @@ import { CTAButton } from '@/components/CTAButton';
 import { SecondaryButton } from '@/components/SecondaryButton';
 import { ScoreBadge } from '@/components/ScoreBadge';
 import { BreadcrumbsJsonLd } from '@/components/BreadcrumbsJsonLd';
+import { PageSources } from '@/components/PageSources';
 import { GAMES, type Game } from '@/data/games';
 import { HUB_URL } from '@/lib/links';
 
@@ -285,6 +286,8 @@ export default function VersusPage({ params }: { params: { slug: string } }) {
           <a href={HUB_URL} target="_blank" rel="noreferrer" className="text-purple hover:text-purple-dark">dayonecitizen.com</a>.
         </p>
       </section>
+
+      <PageSources route="/star-citizen-vs" />
     </>
   );
 }

@@ -6,6 +6,7 @@ import { ScoreBadge } from '@/components/ScoreBadge';
 import { GAMES } from '@/data/games';
 import { HUB_URL } from '@/lib/links';
 import { BreadcrumbsJsonLd } from '@/components/BreadcrumbsJsonLd';
+import { PageSources } from '@/components/PageSources';
 
 const sc = GAMES.find((g) => g.id === 'star-citizen')!;
 
@@ -242,6 +243,8 @@ export default function StarCitizenPage() {
           for the beginner network instead.
         </p>
       </section>
+
+      <PageSources route="/star-citizen" />
     </>
   );
 }
