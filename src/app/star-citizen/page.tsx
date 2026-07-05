@@ -150,7 +150,7 @@ export default function StarCitizenPage() {
         <div className="relative mt-8 aspect-[16/8] overflow-hidden rounded-3xl border border-greenMid shadow-glow">
           <Image
             src="/images/hero/hero-01.jpg"
-            alt="Star Citizen — wide shot of a ship over a planet's atmosphere"
+            alt="Star Citizen — a capital ship in orbit above a planet"
             fill
             sizes="(max-width: 1024px) 100vw, 1100px"
             className="object-cover"
