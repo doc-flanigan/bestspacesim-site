@@ -4,15 +4,41 @@ import { CTAButton } from '@/components/CTAButton';
 import { SecondaryButton } from '@/components/SecondaryButton';
 import { GAMES } from '@/data/games';
 import { BreadcrumbsJsonLd } from '@/components/BreadcrumbsJsonLd';
+import { PageSources } from '@/components/PageSources';
 
 export const metadata = {
-  title: 'Space Sim Comparison 2026 — Filter by Price & Multiplayer',
+  title: 'Space Sim Comparison 2026 — 6 Games Scored Side by Side',
   description:
-    'Compare every major space sim of 2026 side by side. Filter by multiplayer, singleplayer, free-to-try, and price to find the right game for you.',
+    'Star Citizen vs Elite Dangerous vs No Man’s Sky vs EVE, X4 & Starfield — scored side by side. Filter by multiplayer, free-to-try, and price to find your game.',
   alternates: { canonical: '/comparison' },
 };
 
+const faqs = [
+  {
+    q: 'Which space sim is best overall in 2026?',
+    a: 'Star Citizen (9.4/10) tops our rankings for players who want a persistent living universe, with the caveat that it is alpha software. Elite Dangerous (8.2/10) is the strongest finished space sim.',
+  },
+  {
+    q: 'Which space sim can I try for free?',
+    a: 'Star Citizen is free during its periodic Free Fly events — no purchase required, just a free RSI account. The other games on this list are paid, though several see frequent Steam sales.',
+  },
+  {
+    q: 'Which space sim is best for single-player?',
+    a: 'X4: Foundations for empire-building depth, Starfield for story, No Man’s Sky for relaxed exploration. Star Citizen and EVE Online are multiplayer-first.',
+  },
+];
+
 export default function ComparisonPage() {
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  };
+
   return (
     <>
       <BreadcrumbsJsonLd
@@ -20,6 +46,10 @@ export default function ComparisonPage() {
           { name: 'Home', url: '/' },
           { name: 'Comparison', url: '/comparison' },
         ]}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <section className="mx-auto max-w-6xl px-4 pt-12 sm:px-6 sm:pt-16">
         <p className="text-xs font-semibold uppercase tracking-[0.25em] text-purple">
@@ -43,6 +73,24 @@ export default function ComparisonPage() {
         <ComparisonExplorer games={GAMES} />
       </section>
 
+      <section className="mx-auto mt-14 max-w-6xl px-4 sm:px-6">
+        <h2 className="font-display text-2xl font-semibold text-offwhite sm:text-3xl">
+          Every space sim at a glance
+        </h2>
+        <ol className="mt-5 space-y-3">
+          {[...GAMES]
+            .sort((a, b) => a.rank - b.rank)
+            .map((g) => (
+              <li key={g.id} className="text-base leading-relaxed text-offwhite/85">
+                <strong className="text-offwhite">
+                  {g.rank}. {g.title} ({g.score}/10)
+                </strong>{' '}
+                — {g.tagline} <span className="text-muted">({g.priceLabel})</span>
+              </li>
+            ))}
+        </ol>
+      </section>
+
       <section className="mx-auto mt-14 max-w-6xl px-4 pb-4 sm:px-6">
         <h2 className="font-display text-2xl font-semibold text-offwhite sm:text-3xl">
           Popular head-to-head matchups
@@ -62,6 +110,39 @@ export default function ComparisonPage() {
           ))}
         </div>
       </section>
+
+      <section className="mx-auto mt-14 max-w-6xl px-4 sm:px-6">
+        <h2 className="font-display text-2xl font-semibold text-offwhite sm:text-3xl">
+          Frequently asked questions
+        </h2>
+        <div className="mt-4 space-y-6">
+          {faqs.map((f) => (
+            <article key={f.q}>
+              <h3 className="font-display text-lg font-semibold text-offwhite">
+                {f.q}
+              </h3>
+              <p className="mt-2 text-base leading-relaxed text-offwhite/85">
+                {f.a}
+              </p>
+            </article>
+          ))}
+        </div>
+        <p className="mt-8 text-sm text-muted">
+          Deciding on Star Citizen specifically?{' '}
+          <Link
+            href="/is-star-citizen-worth-it"
+            className="text-purple hover:text-purple-dark"
+          >
+            Read the honest worth-it verdict →
+          </Link>{' '}
+          Or see the{' '}
+          <Link href="/best-space-games" className="text-purple hover:text-purple-dark">
+            full ranked list of the best space games →
+          </Link>
+        </p>
+      </section>
+
+      <PageSources route="/comparison" />
     </>
   );
 }
