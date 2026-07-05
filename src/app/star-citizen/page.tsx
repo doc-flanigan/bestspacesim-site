@@ -22,7 +22,7 @@ const sections = [
     heading: 'What is Star Citizen, really?',
     body: [
       "Star Citizen is a first-person space simulation built around a shared persistent universe. Cloud Imperium has rolled out static server meshing, which lets many more players share the same region of space than traditional instanced games allow — so when you fly a ship out of a hangar, take it to orbit, jump to another planet, and walk into a bar, the human you meet there flew there themselves.",
-      'Crowdfunding launched in October 2012, and the game has been in public alpha development since. On May 24, 2026, it crossed $1 billion raised — making it the most crowdfunded project of any kind in history. The current live build is Alpha 4.8 — that matters, and we will not pretend otherwise.',
+      'Crowdfunding launched in October 2012, and the game has been in open development since — public alpha testing began in 2014. On May 24, 2026, it crossed $1 billion raised; no other crowdfunded project comes close. The current live build is Alpha 4.8 — that matters, and we will not pretend otherwise.',
     ],
   },
   {
@@ -62,7 +62,7 @@ const faqs = [
   },
   {
     q: 'Is Star Citizen pay-to-win?',
-    a: 'Ships bought with real money are also earnable in-game with aUEC, and skill matters more than hull size in most encounters. The store sells time, not exclusive power — though the line is a fair debate in the community.',
+    a: 'CIG’s stated policy is that ships bought with real money are also earnable in-game with aUEC, though not every pledge ship is purchasable in-game yet — and skill matters more than hull size in most encounters. The store sells time, not exclusive power, though the line is a fair debate in the community.',
   },
   {
     q: 'Can I play Star Citizen for free?',
@@ -252,7 +252,7 @@ export default function StarCitizenPage() {
               Sign up with referral STAR-GCQJ-N6NC
             </h2>
             <p className="mt-3 text-offwhite/80">
-              Use the referral code on signup for the standard 50,000 aUEC
+              Use the referral code on signup for the standard 50,000 UEC
               enlistment bonus — a meaningful starter wallet. Free accounts
               work too; you can add the code on day one.
             </p>

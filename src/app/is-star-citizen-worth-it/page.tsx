@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     q: 'How much does Star Citizen cost to start?',
-    a: 'A starter Game Package from $45 is the minimum purchase, and it is a one-time payment — no subscription is required to play. Signing up with a referral code (like STAR-GCQJ-N6NC) adds a 50,000 aUEC enlistment bonus to your in-game wallet.',
+    a: 'A starter Game Package from $45 is the minimum purchase, and it is a one-time payment — no subscription is required to play. Signing up with a referral code (like STAR-GCQJ-N6NC) adds a 50,000 UEC enlistment bonus to your account.',
   },
   {
     q: 'Can I try Star Citizen for free before buying?',
@@ -30,7 +30,7 @@ const faqs = [
   },
   {
     q: 'Is Star Citizen still in alpha?',
-    a: 'Yes. Crowdfunding launched in October 2012 and the game has been in public alpha development since. On May 24, 2026 it crossed $1 billion raised, making it the most crowdfunded project of any kind in history. The current live build is Alpha 4.8.',
+    a: 'Yes. Crowdfunding launched in October 2012 and the game has been in open development since, with public alpha testing beginning in 2014. On May 24, 2026 it crossed $1 billion raised — no other crowdfunded project comes close. The current live build is Alpha 4.8.',
   },
   {
     q: 'Is Star Citizen worth it for solo players?',
@@ -103,7 +103,7 @@ export default function WorthItPage() {
             purchase, no subscription. Everything flyable can eventually be
             earned in-game with aUEC, so the hundred-dollar ships on the store
             are optional pledges, not requirements. Signing up with referral
-            code STAR-GCQJ-N6NC adds a 50,000 aUEC enlistment bonus — a
+            code STAR-GCQJ-N6NC adds a 50,000 UEC enlistment bonus — a
             meaningful starter wallet for gear, ammo, and rentals.
           </p>
           <p>
@@ -176,7 +176,7 @@ export default function WorthItPage() {
             Decided? Or still weighing it?
           </h2>
           <p className="mt-3 max-w-2xl text-offwhite/80">
-            If you are in, sign up with the referral code for the 50,000 aUEC
+            If you are in, sign up with the referral code for the 50,000 UEC
             bonus. If you want the full breakdown first, read our{' '}
             <Link href="/star-citizen" className="text-purple hover:text-purple-dark">
               Star Citizen review

@@ -70,7 +70,7 @@ export function Footer() {
             game names and trademarks belong to their respective owners.{' '}
             Affiliate disclosure: If you create a Star Citizen account using
             referral code STAR-GCQJ-N6NC, the site owner may receive an
-            in-game bonus. Your 50,000 aUEC new-player bonus is not affected.
+            in-game bonus. Your 50,000 UEC new-player bonus is not affected.
           </p>
         </div>
       </div>
