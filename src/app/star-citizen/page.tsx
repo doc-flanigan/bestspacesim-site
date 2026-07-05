@@ -4,16 +4,16 @@ import { CTAButton } from '@/components/CTAButton';
 import { SecondaryButton } from '@/components/SecondaryButton';
 import { ScoreBadge } from '@/components/ScoreBadge';
 import { GAMES } from '@/data/games';
-import { HUB_URL } from '@/lib/links';
+import { HUB_URL, FREE_FLY_URL } from '@/lib/links';
 import { BreadcrumbsJsonLd } from '@/components/BreadcrumbsJsonLd';
 import { PageSources } from '@/components/PageSources';
 
 const sc = GAMES.find((g) => g.id === 'star-citizen')!;
 
 export const metadata = {
-  title: 'Star Citizen Review 2026 — Is It Worth It?',
+  title: 'Star Citizen Review 2026 — Scored 9.4/10, Alpha Caveats Included',
   description:
-    'A plain-English Star Citizen review for 2026. What works, what is rough, who it is for — and how to try the live game free during a Free Fly event.',
+    'Our full Star Citizen review for 2026: what the simulation actually does, what is still rough, who it is for — scored 9.4/10, with every alpha caveat stated plainly.',
   alternates: { canonical: '/star-citizen' },
 };
 
@@ -22,7 +22,7 @@ const sections = [
     heading: 'What is Star Citizen, really?',
     body: [
       "Star Citizen is a first-person space simulation built around a shared persistent universe. Cloud Imperium has rolled out static server meshing, which lets many more players share the same region of space than traditional instanced games allow — so when you fly a ship out of a hangar, take it to orbit, jump to another planet, and walk into a bar, the human you meet there flew there themselves.",
-      'Crowdfunding launched in October 2012, and the game has been in public alpha development since. On May 24, 2026, it crossed $1 billion raised — making it the most crowdfunded project of any kind in history. The current live build is Alpha 4.8 — that matters, and we will not pretend otherwise.',
+      'Crowdfunding launched in October 2012, and the game has been in open development since — public alpha testing began in 2014. On May 24, 2026, it crossed $1 billion raised; no other crowdfunded project comes close. The current live build is Alpha 4.8 — that matters, and we will not pretend otherwise.',
     ],
   },
   {
@@ -55,6 +55,21 @@ const sections = [
   },
 ];
 
+const faqs = [
+  {
+    q: 'Is Star Citizen worth it in 2026?',
+    a: 'Yes for players who want a living universe and can tolerate alpha bugs; no for players who want a polished, finished story. We score it 9.4/10 — the highest of the six space sims we rank — with the alpha caveats stated plainly in this review.',
+  },
+  {
+    q: 'Is Star Citizen pay-to-win?',
+    a: 'CIG’s stated policy is that ships bought with real money are also earnable in-game with aUEC, though not every pledge ship is purchasable in-game yet — and skill matters more than hull size in most encounters. The store sells time, not exclusive power, though the line is a fair debate in the community.',
+  },
+  {
+    q: 'Can I play Star Citizen for free?',
+    a: 'During a Free Fly event, yes — anyone with a free RSI account can play the live game at no cost. Cloud Imperium runs these several times a year, typically around Invictus in May and IAE in November.',
+  },
+];
+
 export default function StarCitizenPage() {
   const reviewJsonLd = {
     '@context': 'https://schema.org',
@@ -73,7 +88,17 @@ export default function StarCitizenPage() {
       worstRating: 0,
     },
     author: { '@type': 'Person', name: 'Doc_Flanigan' },
-    name: 'Star Citizen Review 2026 — Is It Worth It?',
+    name: 'Star Citizen Review 2026 — Scored 9.4/10, Alpha Caveats Included',
+  };
+
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
   };
 
   return (
@@ -88,6 +113,10 @@ export default function StarCitizenPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewJsonLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
 
       <section className="mx-auto max-w-4xl px-4 pt-12 sm:px-6 sm:pt-16">
         <p className="text-xs font-semibold uppercase tracking-[0.25em] text-purple">
@@ -97,10 +126,18 @@ export default function StarCitizenPage() {
           Star Citizen Review 2026 — is it worth it?
         </h1>
         <p className="mt-5 max-w-2xl text-pretty text-base leading-relaxed text-offwhite/80 sm:text-lg">
-          A plain-English review for the people Googling "is Star Citizen
-          worth it" in 2026. We cover what it actually does, what is still
-          rough, who it is for — and how to play the live game free during a
-          scheduled Free Fly event.
+          <strong className="text-offwhite">Verdict: 9.4/10.</strong> Star
+          Citizen is the deepest living-universe space sim available in 2026 —
+          seamless planet-to-space flight, a single-shard persistent world, and
+          careers that do real work — and it is still alpha software with the
+          bugs to match. This review covers what it actually does, what is
+          rough, and who it is for.{' '}
+          <Link
+            href="/is-star-citizen-worth-it"
+            className="text-purple hover:text-purple-dark"
+          >
+            Want the short worth-it answer? Start here →
+          </Link>
         </p>
 
         <div className="mt-7 flex flex-wrap items-center gap-3">
@@ -169,6 +206,24 @@ export default function StarCitizenPage() {
         </div>
       </section>
 
+      <section className="mx-auto mt-12 max-w-4xl px-4 sm:px-6">
+        <h2 className="font-display text-2xl font-semibold text-offwhite sm:text-3xl">
+          Frequently asked questions
+        </h2>
+        <div className="mt-4 space-y-6">
+          {faqs.map((f) => (
+            <article key={f.q}>
+              <h3 className="font-display text-lg font-semibold text-offwhite">
+                {f.q}
+              </h3>
+              <p className="mt-2 text-base leading-relaxed text-offwhite/85">
+                {f.a}
+              </p>
+            </article>
+          ))}
+        </div>
+      </section>
+
       <section className="mx-auto mt-16 max-w-4xl px-4 sm:px-6">
         <div className="grid gap-6 rounded-3xl border border-purple/40 bg-gradient-to-br from-greenMid/80 to-deepGreen p-8 shadow-glow md:grid-cols-2">
           <div>
@@ -197,7 +252,7 @@ export default function StarCitizenPage() {
               Sign up with referral STAR-GCQJ-N6NC
             </h2>
             <p className="mt-3 text-offwhite/80">
-              Use the referral code on signup for the standard 50,000 aUEC
+              Use the referral code on signup for the standard 50,000 UEC
               enlistment bonus — a meaningful starter wallet. Free accounts
               work too; you can add the code on day one.
             </p>
@@ -219,19 +274,17 @@ export default function StarCitizenPage() {
           </Link>
         </p>
         <p className="mt-2">
-          Looking for the next Free Fly event? Check{' '}
+          Want to try it before you buy?{' '}
           <a
-            href={HUB_URL}
-            target="_blank"
-            rel="noreferrer"
+            href={FREE_FLY_URL}
             className="text-purple hover:text-purple-dark"
           >
-            dayonecitizen.com
+            freeflyevent.com
           </a>{' '}
-          for the latest Free Fly schedule and new player guides.
+          tracks the next Free Fly window, when the live game is playable free.
         </p>
         <p className="mt-2">
-          Heading to{' '}
+          Brand new to the game?{' '}
           <a
             href={HUB_URL}
             target="_blank"
@@ -240,7 +293,7 @@ export default function StarCitizenPage() {
           >
             dayonecitizen.com
           </a>{' '}
-          for the beginner network instead.
+          walks you through your first hour in plain English.
         </p>
       </section>
 
