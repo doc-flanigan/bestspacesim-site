@@ -54,7 +54,7 @@ export default function HomePage() {
               real living universe.
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
-              <CTAButton size="lg" />
+              <CTAButton size="lg" trackingLabel="home-hero" />
               <SecondaryButton size="lg" />
             </div>
           </div>
@@ -139,7 +139,7 @@ function TopPick() {
             ))}
           </ul>
           <div className="mt-7 flex flex-wrap gap-3">
-            <CTAButton>Try Star Citizen Free</CTAButton>
+            <CTAButton trackingLabel="home-top-pick">Try Star Citizen Free</CTAButton>
             <SecondaryButton href="/star-citizen" external={false}>
               Read full review
             </SecondaryButton>
@@ -358,7 +358,7 @@ function FreeFlyCTA() {
             on signup for the standard 50,000 UEC enlistment bonus.
           </p>
           <div className="mt-7 flex flex-wrap items-center justify-center gap-3">
-            <CTAButton size="lg" />
+            <CTAButton size="lg" trackingLabel="home-free-fly" />
             <SecondaryButton size="lg" href={FREE_FLY_URL}>
               See upcoming Free Fly events
             </SecondaryButton>

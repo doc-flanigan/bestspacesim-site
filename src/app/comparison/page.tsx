@@ -64,7 +64,7 @@ export default function ComparisonPage() {
           and score them on the features that separate the genre.
         </p>
         <div className="mt-7 flex flex-wrap gap-3">
-          <CTAButton />
+          <CTAButton trackingLabel="comparison-hero" />
           <SecondaryButton />
         </div>
       </section>

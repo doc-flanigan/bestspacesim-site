@@ -257,7 +257,7 @@ export default function StarCitizenPage() {
               work too; you can add the code on day one.
             </p>
             <div className="mt-5">
-              <CTAButton>Try Star Citizen Free</CTAButton>
+              <CTAButton trackingLabel="star-citizen-signup">Try Star Citizen Free</CTAButton>
             </div>
             <p className="mt-3 text-xs text-muted">
               robertsspaceindustries.com/enlist?referral=STAR-GCQJ-N6NC
