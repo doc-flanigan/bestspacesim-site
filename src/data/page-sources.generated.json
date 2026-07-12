@@ -22,6 +22,40 @@
         ]
       }
     ],
+    "/is-star-citizen-a-scam": [
+      {
+        "id": "funding-one-billion-may-2026",
+        "claim": "Star Citizen crossed $1 billion in total funding raised on May 24, 2026, from over 6.5 million backer accounts.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/en/funding-goals"
+        ]
+      },
+      {
+        "id": "sq42-content-complete-may-2026-letter",
+        "claim": "In the May 25, 2026 Letter from the Chairman, Chris Roberts restated the goal to 'push Squadron 42 toward Beta and release in 2026' and said the game is content complete — all chapters fully playable from beginning to end with regular internal playthroughs — and over forty hours long, with polish, optimization, and bug fixing remaining.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/en/comm-link/transmission/20960-Letter-From-The-Chairman"
+        ]
+      },
+      {
+        "id": "sq42-launch-window-2026",
+        "claim": "CIG announced a 2026 launch window for Squadron 42 at CitizenCon 2954 (October 2024).",
+        "status": "verified",
+        "sources": [
+          "https://www.gamespress.com/en-US/Cloud-Imperium-Games-Reveals-Over-an-Hour-of-Star-Studded-Space-Advent"
+        ]
+      },
+      {
+        "id": "starter-package-from-45-usd",
+        "claim": "Star Citizen starter Game Packages begin at $45, with no subscription required to play.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/pledge/game-packages"
+        ]
+      }
+    ],
     "/is-star-citizen-worth-it": [
       {
         "id": "crowdfunding-launch-vs-alpha-start",
@@ -107,6 +141,24 @@
         "sources": [
           "https://support.robertsspaceindustries.com/hc/en-us/articles/16444523494423-Daily-Life-in-the-Verse",
           "https://support.robertsspaceindustries.com/hc/en-us/articles/360011409454-Buying-Ships-with-aUEC"
+        ]
+      }
+    ],
+    "/star-citizen-player-count": [
+      {
+        "id": "funding-one-billion-may-2026",
+        "claim": "Star Citizen crossed $1 billion in total funding raised on May 24, 2026, from over 6.5 million backer accounts.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/en/funding-goals"
+        ]
+      },
+      {
+        "id": "sc-player-count-no-official",
+        "claim": "CIG does not publish active-player or concurrent-player statistics for Star Citizen. The official RSI funding tracker reports total registered accounts ('Star Citizens', 6.5M+ as of mid-2026) — an all-time account count, not an active-player number. All specific 'player count' figures on third-party sites are estimates.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/en/funding-goals"
         ]
       }
     ],

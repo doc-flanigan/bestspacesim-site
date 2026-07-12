@@ -104,7 +104,15 @@ export default function WorthItPage() {
             earned in-game with aUEC, so the hundred-dollar ships on the store
             are optional pledges, not requirements. Signing up with referral
             code STAR-GCQJ-N6NC adds a 50,000 UEC enlistment bonus — a
-            meaningful starter wallet for gear, ammo, and rentals.
+            meaningful starter wallet for gear, ammo, and rentals. If the
+            funding model itself makes you suspicious, we take that question
+            head-on in{' '}
+            <Link
+              href="/is-star-citizen-a-scam"
+              className="text-purple hover:text-purple-dark"
+            >
+              is Star Citizen a scam?
+            </Link>
           </p>
           <p>
             Better yet: you may not need to spend anything to find out.
@@ -184,6 +192,13 @@ export default function WorthItPage() {
             or see{' '}
             <Link href="/comparison" className="text-purple hover:text-purple-dark">
               how it compares to the rest of the genre
+            </Link>
+            . Wondering whether the universe will feel populated? See{' '}
+            <Link
+              href="/star-citizen-player-count"
+              className="text-purple hover:text-purple-dark"
+            >
+              what the player-count numbers actually show
             </Link>
             .
           </p>

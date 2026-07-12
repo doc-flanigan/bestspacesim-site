@@ -284,6 +284,24 @@ export default function StarCitizenPage() {
           tracks the next Free Fly window, when the live game is playable free.
         </p>
         <p className="mt-2">
+          Heard it called a scam, or wondering how many people actually play?
+          We answer both without flinching:{' '}
+          <Link
+            href="/is-star-citizen-a-scam"
+            className="text-purple hover:text-purple-dark"
+          >
+            is Star Citizen a scam?
+          </Link>{' '}
+          and{' '}
+          <Link
+            href="/star-citizen-player-count"
+            className="text-purple hover:text-purple-dark"
+          >
+            the truth about the player count
+          </Link>
+          .
+        </p>
+        <p className="mt-2">
           Brand new to the game?{' '}
           <a
             href={HUB_URL}

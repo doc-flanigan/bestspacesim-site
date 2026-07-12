@@ -12,6 +12,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/comparison',
     '/star-citizen',
     '/is-star-citizen-worth-it',
+    '/is-star-citizen-a-scam',
+    '/star-citizen-player-count',
     '/best-space-games',
     ...versusRoutes,
   ];
