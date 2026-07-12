@@ -16,6 +16,25 @@ export const metadata = {
 
 const topPick = GAMES[0];
 
+const faqs = [
+  {
+    q: 'What is the best space sim?',
+    a: 'Star Citizen is our top pick for 2026, scoring 9.4/10 — the highest of the six space sims we rank (Star Citizen, Elite Dangerous, EVE Online, X4: Foundations, No Man’s Sky, and Starfield). It stands above the rest if you want a real living universe: seamless atmospheric flight, a persistent multiplayer world, and real careers like mining, hauling, salvage, and medical. Other sims do parts of this well — Star Citizen is the only one building all of it in one persistent simulation.',
+  },
+  {
+    q: 'Is Star Citizen worth playing?',
+    a: 'Yes — if you want the deepest living universe in gaming and can tolerate alpha-stage bugs; no — if you want a polished, finished story. Star Citizen scores 9.4/10 in our rankings, but the current build is alpha software, so server hiccups and missing quality-of-life features are part of the deal.',
+  },
+  {
+    q: 'Can you try Star Citizen for free?',
+    a: 'Yes. Cloud Imperium runs Free Fly events a few times a year — typically Invictus Launch Week in May and the Intergalactic Aerospace Expo in November, plus shorter promo windows. During an event, anyone with a free RSI account gets a loaner ship plus a daily rotating ship roster to try, no purchase required. Between events, playing requires a starter Game Package (~$45–$55).',
+  },
+  {
+    q: 'What should you compare before choosing a space sim?',
+    a: 'Compare what each game actually delivers, not what the trailers promise: a persistent living universe, cockpit-perspective ship combat, on-foot FPS combat, seamless planetary landings, a player-driven economy, co-op or multiplayer support, and mod support — plus price and whether you can try it free. Our feature-by-feature comparison table scores all six games on exactly these criteria.',
+  },
+];
+
 export default function HomePage() {
   const itemListJsonLd = {
     '@context': 'https://schema.org',
@@ -31,11 +50,25 @@ export default function HomePage() {
     })),
   };
 
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
       <section className="mx-auto max-w-6xl px-4 pt-10 sm:px-6 sm:pt-14">
@@ -110,8 +143,32 @@ export default function HomePage() {
         </div>
       </section>
 
+      <HomeFaq />
+
       <FreeFlyCTA />
     </>
+  );
+}
+
+function HomeFaq() {
+  return (
+    <section className="mx-auto mt-24 max-w-4xl px-4 sm:px-6">
+      <h2 className="font-display text-3xl font-semibold text-offwhite sm:text-4xl">
+        Frequently asked questions
+      </h2>
+      <div className="mt-6 space-y-6">
+        {faqs.map((f) => (
+          <article key={f.q}>
+            <h3 className="font-display text-lg font-semibold text-offwhite">
+              {f.q}
+            </h3>
+            <p className="mt-2 text-base leading-relaxed text-offwhite/85">
+              {f.a}
+            </p>
+          </article>
+        ))}
+      </div>
+    </section>
   );
 }
 
