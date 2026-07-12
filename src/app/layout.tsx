@@ -4,8 +4,6 @@ import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
 import { NavBar } from '@/components/NavBar';
 import { Footer } from '@/components/Footer';
-import GoogleAnalytics from '@/components/GoogleAnalytics';
-import CookieBanner from '@/components/CookieBanner';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -70,8 +68,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
         <Footer />
         <Analytics />
-        <GoogleAnalytics />
-        <CookieBanner />
       </body>
     </html>
   );
