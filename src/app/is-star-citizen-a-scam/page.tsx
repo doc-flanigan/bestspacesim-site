@@ -23,7 +23,7 @@ const skepticCase = [
   {
     heading: 'The case against "scam"',
     body: [
-      'A scam takes your money and gives you nothing. Star Citizen takes your money and gives you a playable game, today: Alpha 4.8 has been live since May 14, 2026, with 4.9 expected around August. The funding is not hidden either — the RSI funding tracker publicly discloses money raised in real time, and it crossed $1 billion on May 24, 2026, from over 6.5 million backer accounts. Whatever you think of the pace, the books are open.',
+      'A scam takes your money and gives you nothing. Star Citizen takes your money and gives you a playable game, today: Alpha 4.8 has been live since May 14, 2026, with 4.9 announced for July 2026. The funding is not hidden either — the RSI funding tracker publicly discloses money raised in real time, and it crossed $1 billion on May 24, 2026, from over 6.5 million backer accounts. Whatever you think of the pace, the books are open.',
       'Squadron 42, the single-player campaign skeptics long called vaporware, is content complete — per the May 2026 Letter From The Chairman, all chapters are fully playable from beginning to end at over forty hours, with polish and bug fixing remaining, and the stated goal is to "push Squadron 42 toward Beta and release in 2026." That 2026 window was first announced at CitizenCon 2954 in October 2024.',
       'The honest asterisk: Star Citizen 1.0 — the finished persistent universe — has no official release date. The 2027-2028 figures you may have read come from press interviews, not from an official CIG announcement. Slow and open is not the same thing as fraudulent, but "when is 1.0" genuinely has no answer yet.',
     ],
