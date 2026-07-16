@@ -18,7 +18,7 @@ export const metadata = {
 const faqs = [
   {
     q: 'Is Star Citizen worth it in 2026?',
-    a: 'Yes, for players who want the deepest living-universe sim available and can tolerate alpha-stage bugs. Star Citizen scores 9.4/10 in our rankings — the highest of any space sim we review — because of its seamless atmospheric flight, single-shard persistent universe, and working careers like mining, hauling, salvage, and medical rescue. It is not worth it if you want a polished, finished game: the current live build is Alpha 4.8, and server hiccups and missing quality-of-life features are part of the deal.',
+    a: 'Yes, for players who want the deepest living-universe sim available and can tolerate alpha-stage bugs. Star Citizen scores 9.4/10 in our rankings — the highest of any space sim we review — because of its seamless atmospheric flight, single-shard persistent universe, and working careers like mining, hauling, salvage, and medical rescue. It is not worth it if you want a polished, finished game: the current live build is Alpha 4.9, and server hiccups and missing quality-of-life features are part of the deal.',
   },
   {
     q: 'How much does Star Citizen cost to start?',
@@ -30,7 +30,7 @@ const faqs = [
   },
   {
     q: 'Is Star Citizen still in alpha?',
-    a: 'Yes. Crowdfunding launched in October 2012 and the game has been in open development since, with public alpha testing beginning in 2014. On May 24, 2026 it crossed $1 billion raised — no other crowdfunded project comes close. The current live build is Alpha 4.8.',
+    a: 'Yes. Crowdfunding launched in October 2012 and the game has been in open development since, with public alpha testing beginning in 2014. On May 24, 2026 it crossed $1 billion raised — no other crowdfunded project comes close. The current live build is Alpha 4.9.',
   },
   {
     q: 'Is Star Citizen worth it for solo players?',

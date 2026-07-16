@@ -22,7 +22,7 @@ const sections = [
     heading: 'What is Star Citizen, really?',
     body: [
       "Star Citizen is a first-person space simulation built around a shared persistent universe. Cloud Imperium has rolled out static server meshing, which lets many more players share the same region of space than traditional instanced games allow — so when you fly a ship out of a hangar, take it to orbit, jump to another planet, and walk into a bar, the human you meet there flew there themselves.",
-      'Crowdfunding launched in October 2012, and the game has been in open development since — public alpha testing began in 2014. On May 24, 2026, it crossed $1 billion raised; no other crowdfunded project comes close. The current live build is Alpha 4.8 — that matters, and we will not pretend otherwise.',
+      'Crowdfunding launched in October 2012, and the game has been in open development since — public alpha testing began in 2014. On May 24, 2026, it crossed $1 billion raised; no other crowdfunded project comes close. The current live build is Alpha 4.9 — that matters, and we will not pretend otherwise.',
     ],
   },
   {
