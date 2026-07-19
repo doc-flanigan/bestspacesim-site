@@ -11,7 +11,7 @@ import { PageSources } from '@/components/PageSources';
 const sc = GAMES.find((g) => g.id === 'star-citizen')!;
 
 export const metadata = {
-  title: 'Star Citizen Review 2026 — Scored 9.4/10, Alpha Caveats Included',
+  title: 'Star Citizen Review 2026 — 9.4/10',
   description:
     'Our full Star Citizen review for 2026: what the simulation actually does, what is still rough, who it is for — scored 9.4/10, with every alpha caveat stated plainly.',
   alternates: { canonical: '/star-citizen' },

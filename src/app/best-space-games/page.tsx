@@ -6,7 +6,7 @@ import { BreadcrumbsJsonLd } from '@/components/BreadcrumbsJsonLd';
 import { PageSources } from '@/components/PageSources';
 
 export const metadata = {
-  title: 'Best Space Games 2026 — 6 Titles Actually Worth Playing',
+  title: 'Best Space Games 2026 — 6 Worth Playing',
   description:
     'The best space games of 2026, ranked: Star Citizen (9.4), Elite Dangerous, No Man’s Sky, EVE Online, X4, and Starfield — with an honest one-line verdict for each.',
   alternates: { canonical: '/best-space-games' },

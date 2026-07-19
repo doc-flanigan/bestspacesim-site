@@ -7,7 +7,7 @@ import { BreadcrumbsJsonLd } from '@/components/BreadcrumbsJsonLd';
 import { PageSources } from '@/components/PageSources';
 
 export const metadata = {
-  title: 'Space Sim Comparison 2026 — 6 Games Scored Side by Side',
+  title: 'Space Sim Comparison 2026 — 6 Games Scored',
   description:
     'Star Citizen vs Elite Dangerous vs No Man’s Sky vs EVE, X4 & Starfield — scored side by side. Filter by multiplayer, free-to-try, and price to find your game.',
   alternates: { canonical: '/comparison' },

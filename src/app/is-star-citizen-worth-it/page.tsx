@@ -11,7 +11,7 @@ const sc = GAMES.find((g) => g.id === 'star-citizen')!;
 export const metadata = {
   title: 'Is Star Citizen Worth It in 2026? An Honest Verdict',
   description:
-    'Yes — if you want a living universe and can tolerate alpha bugs. No — if you want a polished 30-hour story. Costs, who should buy, who should wait, and how to try it free.',
+    'Yes — if you want a living universe and tolerate alpha bugs. No — if you want a polished story. Costs, who should buy, and how to try free.',
   alternates: { canonical: '/is-star-citizen-worth-it' },
 };
 

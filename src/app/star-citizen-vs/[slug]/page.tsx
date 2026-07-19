@@ -22,7 +22,7 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const opp = opponentBySlug(params.slug);
   if (!opp) return { robots: { index: false, follow: false } };
-  const title = `Star Citizen vs ${opp.title} (2026): Which Space Sim Wins?`;
+  const title = `Star Citizen vs ${opp.title} (2026)`;
   const description = `Star Citizen vs ${opp.title} in 2026 — a feature-by-feature comparison of scale, flight, economy, and price, plus which space sim is the right pick for you.`;
   return {
     title,

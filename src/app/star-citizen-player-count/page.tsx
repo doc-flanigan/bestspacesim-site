@@ -5,7 +5,7 @@ import { BreadcrumbsJsonLd } from '@/components/BreadcrumbsJsonLd';
 import { PageSources } from '@/components/PageSources';
 
 export const metadata = {
-  title: 'Star Citizen Player Count 2026 — Why No Official Number Exists',
+  title: 'Star Citizen Player Count 2026, Explained',
   description:
     'There is no official Star Citizen player count. We explain what the 6.5M accounts figure really is, why estimates disagree 5x, and the signals you can verify.',
   alternates: { canonical: '/star-citizen-player-count' },
