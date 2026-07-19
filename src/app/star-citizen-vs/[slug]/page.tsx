@@ -28,7 +28,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
     title,
     description,
     alternates: { canonical: `/star-citizen-vs/${opp.id}` },
-    openGraph: { title, description, type: 'article' },
+    openGraph: { title, description, type: 'article', images: ['/images/hero/hero-01.jpg'] },
   };
 }
 
