@@ -14,6 +14,8 @@ export type Game = {
   priceLabel: string;
   released: string;
   developer: string;
+  /** Optional real gameplay screenshot for the ranking card thumbnail. */
+  image?: { src: string; alt: string };
   features: {
     livingUniverse: 'yes' | 'partial' | 'no';
     fpsCombat: 'yes' | 'partial' | 'no';
@@ -53,6 +55,10 @@ export const GAMES: Game[] = [
     priceLabel: 'Starter pack on RSI store · Free during Free Fly events',
     released: '2012 (alpha, ongoing)',
     developer: 'Cloud Imperium Games',
+    image: {
+      src: '/images/screenshots/star-citizen-gameplay.jpg',
+      alt: 'Star Citizen gameplay — a ship in orbit above Crusader at sunrise',
+    },
     features: {
       livingUniverse: 'yes',
       fpsCombat: 'yes',

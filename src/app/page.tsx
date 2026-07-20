@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { HeroCarousel } from '@/components/HeroCarousel';
+import { ScreenshotFigure, ScreenshotGrid } from '@/components/ScreenshotFigure';
 import { GameComparisonCard } from '@/components/GameComparisonCard';
 import { ComparisonTable } from '@/components/ComparisonTable';
 import { CTAButton } from '@/components/CTAButton';
@@ -119,6 +120,27 @@ export default function HomePage() {
             capacity, and comfortable to fly. The Aurora Mk II (~$45) works if you want
             the absolute minimum to get in the door.
           </p>
+          <div className="mb-6">
+            <ScreenshotGrid
+              images={[
+                {
+                  src: '/images/screenshots/avenger-titan.jpg',
+                  alt: 'Aegis Avenger Titan starter ship on a landing pad',
+                  caption: 'Avenger Titan (~$55) — our pick for best first ship.',
+                  width: 1820,
+                  height: 1024,
+                },
+                {
+                  src: '/images/screenshots/aurora-mr.jpg',
+                  alt: 'RSI Aurora light starter ship on a landing pad',
+                  caption:
+                    'The Aurora — the ~$45 minimum buy-in (earlier Aurora MR model shown).',
+                  width: 1820,
+                  height: 1024,
+                },
+              ]}
+            />
+          </div>
           <p className="mb-6" style={{ color: '#7a8f7d' }}>
             Before you buy: use a referral code when you create your account and you&apos;ll
             get{' '}
@@ -126,6 +148,16 @@ export default function HomePage() {
             added automatically. Use code{' '}
             <strong style={{ color: '#eef2ee' }}>STAR-GCQJ-N6NC</strong>.
           </p>
+          <div className="mb-6 max-w-md">
+            <ScreenshotFigure
+              src="/images/screenshots/rsi-signup-referral-code-field.jpg"
+              alt="RSI account signup form with referral code STAR-GCQJ-N6NC entered in the Referral Code field"
+              caption="The Referral Code field on RSI signup — enter STAR-GCQJ-N6NC and the 50,000 UEC bonus is applied automatically."
+              width={1200}
+              height={1069}
+              sizes="(max-width: 640px) 100vw, 448px"
+            />
+          </div>
           <div className="flex flex-col sm:flex-row gap-3 items-start">
             <CTAButton trackingLabel="Getting Started Section">
               Enlist with Referral Code

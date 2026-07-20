@@ -4,6 +4,7 @@ import { SecondaryButton } from '@/components/SecondaryButton';
 import { FREE_FLY_URL, SITE_URL } from '@/lib/links';
 import { BreadcrumbsJsonLd } from '@/components/BreadcrumbsJsonLd';
 import { PageSources } from '@/components/PageSources';
+import { ScreenshotGrid, type Screenshot } from '@/components/ScreenshotFigure';
 
 export const metadata = {
   title: 'Is Star Citizen a Scam? An Honest 2026 Answer',
@@ -12,7 +13,9 @@ export const metadata = {
   alternates: { canonical: '/is-star-citizen-a-scam' },
 };
 
-const skepticCase = [
+type SectionBlock = string | { images: Screenshot[] };
+
+const skepticCase: { heading: string; body: SectionBlock[] }[] = [
   {
     heading: 'The case for the skeptics — steelmanned',
     body: [
@@ -24,6 +27,18 @@ const skepticCase = [
     heading: 'The case against "scam"',
     body: [
       'A scam takes your money and gives you nothing. Star Citizen takes your money and gives you a playable game, today: Alpha 4.9 has been live since July 15, 2026. The funding is not hidden either — the RSI funding tracker publicly discloses money raised in real time, and it crossed $1 billion on May 24, 2026, from over 6.5 million backer accounts. Whatever you think of the pace, the books are open.',
+      {
+        images: [
+          {
+            src: '/images/screenshots/rsi-launcher-live-build.jpg',
+            alt: 'The RSI Launcher with a live build of Star Citizen installed and ready to launch',
+            caption:
+              'The RSI Launcher on a live build — the game downloads, installs, and launches today.',
+            width: 1071,
+            height: 766,
+          },
+        ],
+      },
       'Squadron 42, the single-player campaign skeptics long called vaporware, is content complete — per the May 2026 Letter From The Chairman, all chapters are fully playable from beginning to end at over forty hours, with polish and bug fixing remaining, and the stated goal is to "push Squadron 42 toward Beta and release in 2026." That 2026 window was first announced at CitizenCon 2954 in October 2024.',
       'The honest asterisk: Star Citizen 1.0 — the finished persistent universe — has no official release date. The 2027-2028 figures you may have read come from press interviews, not from an official CIG announcement. Slow and open is not the same thing as fraudulent, but "when is 1.0" genuinely has no answer yet.',
     ],
@@ -39,6 +54,18 @@ const skepticCase = [
     heading: 'What $45 actually gets you',
     body: [
       'The minimum entry is the $45 Citizen Starter Pack: an Aurora Mk II starter ship, 10,000 starting aUEC, and access to the live game — a one-time purchase with no subscription. Everything beyond that is optional. Nobody needs a $600 ship to play; the whales fund the development, and the $45 player flies in the same universe.',
+      {
+        images: [
+          {
+            src: '/images/screenshots/getting-started-game-package-starter-packs-list.jpg',
+            alt: 'RSI store list of starter Game Packages showing the $45 Citizen Starter Pack alongside other packs',
+            caption:
+              'The starter Game Packages on the RSI store — entry starts at $45, one-time, no subscription.',
+            width: 1200,
+            height: 561,
+          },
+        ],
+      },
       'One distinction worth knowing: aUEC is the in-game money you earn and spend in the alpha. The separate 50,000 UEC referral signup bonus is credited when you create your account with any referral code — no purchase required. And before spending anything, you can try the full game free during a Free Fly event.',
     ],
   },
@@ -135,9 +162,13 @@ export default function ScamPage() {
               {s.heading}
             </h2>
             <div className="mt-3 space-y-4 text-base leading-relaxed text-offwhite/85">
-              {s.body.map((p, i) => (
-                <p key={i}>{p}</p>
-              ))}
+              {s.body.map((block, i) =>
+                typeof block === 'string' ? (
+                  <p key={i}>{block}</p>
+                ) : (
+                  <ScreenshotGrid key={i} images={block.images} />
+                )
+              )}
             </div>
           </article>
         ))}

@@ -5,6 +5,7 @@ import { GAMES } from '@/data/games';
 import { FREE_FLY_URL } from '@/lib/links';
 import { BreadcrumbsJsonLd } from '@/components/BreadcrumbsJsonLd';
 import { PageSources } from '@/components/PageSources';
+import { ScreenshotGrid } from '@/components/ScreenshotFigure';
 
 const sc = GAMES.find((g) => g.id === 'star-citizen')!;
 
@@ -114,6 +115,26 @@ export default function WorthItPage() {
               is Star Citizen a scam?
             </Link>
           </p>
+          <ScreenshotGrid
+            images={[
+              {
+                src: '/images/screenshots/getting-started-add-to-cart-citizen-starter-pack.jpg',
+                alt: 'RSI store page for the $45 Citizen Starter Pack with the Add to cart button',
+                caption:
+                  'The $45 Citizen Starter Pack on the RSI store — a one-time purchase, no subscription.',
+                width: 952,
+                height: 468,
+              },
+              {
+                src: '/images/screenshots/rsi-signup-referral-code-field.jpg',
+                alt: 'RSI account signup form with referral code STAR-GCQJ-N6NC entered in the Referral Code field',
+                caption:
+                  'The Referral Code field on RSI signup — the 50,000 UEC enlistment bonus is applied automatically.',
+                width: 1200,
+                height: 1069,
+              },
+            ]}
+          />
           <p>
             Better yet: you may not need to spend anything to find out.
             Cloud Imperium runs Free Fly events several times a year where the

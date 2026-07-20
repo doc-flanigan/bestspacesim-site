@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import type { Game } from '@/data/games';
 import { ScoreBadge } from './ScoreBadge';
 
@@ -22,16 +23,28 @@ export function GameComparisonCard({ game, highlight = false }: Props) {
         </span>
       )}
 
-      <div
-        aria-hidden
-        className="relative mb-5 flex aspect-[16/9] items-center justify-center overflow-hidden rounded-xl border border-greenMid bg-gradient-to-br from-purple/25 via-greenMid/40 to-deepGreen"
-      >
-        <div className="absolute -right-6 -top-8 h-24 w-24 rounded-full bg-purple/20 blur-2xl" />
-        <div className="absolute -bottom-10 -left-6 h-24 w-24 rounded-full bg-purple/10 blur-2xl" />
-        <span className="relative px-4 text-center font-display text-lg font-semibold text-offwhite/95 sm:text-xl">
-          {game.title}
-        </span>
-      </div>
+      {game.image ? (
+        <div className="relative mb-5 aspect-[16/9] overflow-hidden rounded-xl border border-greenMid">
+          <Image
+            src={game.image.src}
+            alt={game.image.alt}
+            fill
+            sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 380px"
+            className="object-cover"
+          />
+        </div>
+      ) : (
+        <div
+          aria-hidden
+          className="relative mb-5 flex aspect-[16/9] items-center justify-center overflow-hidden rounded-xl border border-greenMid bg-gradient-to-br from-purple/25 via-greenMid/40 to-deepGreen"
+        >
+          <div className="absolute -right-6 -top-8 h-24 w-24 rounded-full bg-purple/20 blur-2xl" />
+          <div className="absolute -bottom-10 -left-6 h-24 w-24 rounded-full bg-purple/10 blur-2xl" />
+          <span className="relative px-4 text-center font-display text-lg font-semibold text-offwhite/95 sm:text-xl">
+            {game.title}
+          </span>
+        </div>
+      )}
 
       <div className="flex items-start justify-between gap-3">
         <div>

@@ -7,6 +7,7 @@ import { GAMES } from '@/data/games';
 import { HUB_URL, FREE_FLY_URL } from '@/lib/links';
 import { BreadcrumbsJsonLd } from '@/components/BreadcrumbsJsonLd';
 import { PageSources } from '@/components/PageSources';
+import { ScreenshotGrid, type Screenshot } from '@/components/ScreenshotFigure';
 
 const sc = GAMES.find((g) => g.id === 'star-citizen')!;
 
@@ -17,7 +18,9 @@ export const metadata = {
   alternates: { canonical: '/star-citizen' },
 };
 
-const sections = [
+type SectionBlock = string | { images: Screenshot[] };
+
+const sections: { heading: string; body: SectionBlock[] }[] = [
   {
     heading: 'What is Star Citizen, really?',
     body: [
@@ -29,7 +32,58 @@ const sections = [
     heading: 'What the simulation actually does',
     body: [
       "The headline feature is seamless atmospheric flight. Quantum travel, atmospheric entry, city flyovers, surface driving — Cloud Imperium describes it as a single uninterrupted flight, and that flight is live in the current alpha.",
+      {
+        images: [
+          {
+            src: '/images/screenshots/atmospheric-flight-new-babbage.jpg',
+            alt: 'An M2 Hercules in atmospheric flight climbing away from the city of New Babbage on microTech',
+            caption:
+              'Seamless atmospheric flight in the live game — an M2 Hercules leaving New Babbage, no loading screen between street and orbit.',
+            width: 3360,
+            height: 1440,
+          },
+        ],
+      },
       "Underneath that, careers do real work. Mining is a full minigame with prospecting, extraction, and refining. Hauling involves contracts, physicalised cargo, and risk of pirate interception by other players. Salvage strips ships down piece by piece. Medical players run rescue ops with dedicated medical ships. Time-trial racing has its own circuits and ships.",
+      {
+        images: [
+          {
+            src: '/images/screenshots/career-mining.jpg',
+            alt: 'A MISC Prospector mining ship docked at a refinery station',
+            caption: 'Mining — a Prospector at a refinery deck.',
+            width: 3400,
+            height: 1793,
+          },
+          {
+            src: '/images/screenshots/career-hauling.jpg',
+            alt: 'A C2 Hercules cargo hauler flying over the snowy plains of microTech',
+            caption: 'Hauling — a C2 Hercules over microTech.',
+            width: 3400,
+            height: 1913,
+          },
+          {
+            src: '/images/screenshots/career-salvage.jpg',
+            alt: 'A Drake Vulture salvage ship departing Hurston',
+            caption: 'Salvage — a Vulture leaving Hurston.',
+            width: 3400,
+            height: 1913,
+          },
+          {
+            src: '/images/screenshots/career-medical.jpg',
+            alt: 'A player being treated in a medical bed at Everus Harbor',
+            caption: 'Medical — a medbed at Everus Harbor.',
+            width: 3400,
+            height: 1913,
+          },
+          {
+            src: '/images/screenshots/career-racing.jpg',
+            alt: 'An Origin 350R racing ship on a racetrack',
+            caption: 'Racing — a 350R on the circuit.',
+            width: 3400,
+            height: 1913,
+          },
+        ],
+      },
     ],
   },
   {
@@ -167,9 +221,13 @@ export default function StarCitizenPage() {
               {s.heading}
             </h2>
             <div className="mt-3 space-y-4 text-base leading-relaxed text-offwhite/85">
-              {s.body.map((p, i) => (
-                <p key={i}>{p}</p>
-              ))}
+              {s.body.map((block, i) =>
+                typeof block === 'string' ? (
+                  <p key={i}>{block}</p>
+                ) : (
+                  <ScreenshotGrid key={i} images={block.images} />
+                )
+              )}
             </div>
           </article>
         ))}
