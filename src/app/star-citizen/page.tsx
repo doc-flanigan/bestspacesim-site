@@ -324,6 +324,23 @@ export default function StarCitizenPage() {
         </div>
       </section>
 
+      <section className="mx-auto mt-12 max-w-4xl px-4 sm:px-6">
+        <h2 className="text-[11px] font-semibold uppercase tracking-wider text-purple">
+          How Star Citizen stacks up head-to-head
+        </h2>
+        <div className="mt-3 flex flex-wrap gap-3">
+          {GAMES.filter((g) => g.id !== 'star-citizen').map((g) => (
+            <Link
+              key={g.id}
+              href={`/star-citizen-vs/${g.id}`}
+              className="rounded-full border border-purple/40 px-4 py-2 text-sm text-offwhite/85 transition hover:border-purple hover:bg-purple/10"
+            >
+              Star Citizen vs {g.title} →
+            </Link>
+          ))}
+        </div>
+      </section>
+
       <section className="mx-auto mt-12 max-w-4xl px-4 pb-4 text-sm text-muted sm:px-6">
         <p>
           Want to compare Star Citizen against the rest of the genre?{' '}
