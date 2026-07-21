@@ -88,7 +88,14 @@ export default function HomePage() {
               real living universe.
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
-              <CTAButton size="lg" trackingLabel="home-hero" />
+              <CTAButton
+                size="lg"
+                trackingLabel="home-hero"
+                variants={{
+                  a: 'Try Star Citizen Free During Free Fly',
+                  b: 'Start Star Citizen — 50,000 UEC Bonus',
+                }}
+              />
               <SecondaryButton size="lg" />
             </div>
           </div>
