@@ -4,6 +4,7 @@ import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
 import { NavBar } from '@/components/NavBar';
 import { Footer } from '@/components/Footer';
+import { FreeFlyBanner } from '@/components/FreeFlyBanner';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -64,6 +65,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${inter.variable} ${orbitron.variable}`}>
       <body className="font-sans antialiased">
+        <FreeFlyBanner />
         <NavBar />
         <main>{children}</main>
         <Footer />
