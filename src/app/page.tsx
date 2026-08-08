@@ -359,7 +359,7 @@ function WhyStarCitizen() {
       body: 'Mining, hauling, salvage, medical, and racing each ship as live career loops in the alpha — with their own ships, gear, and skill curves.',
     },
     {
-      title: 'A genuinely free trial — when an event is on',
+      title: 'A temporary free-play window — when an event is on',
       body: "Cloud Imperium runs Free Fly events a few times a year — typically Invictus Launch Week in May and the IAE in November, plus shorter promo windows. During an event, anyone with a free RSI account gets a loaner ship plus a daily rotating ship roster to try.",
     },
   ];
