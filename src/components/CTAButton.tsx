@@ -71,6 +71,7 @@ export function CTAButton({
             referralCode: code,
             page: window.location.pathname,
             site: window.location.hostname,
+            referrer: (typeof sessionStorage !== 'undefined' && sessionStorage.getItem('lref')) || '',
           }),
         }).catch(() => {})
       },
@@ -96,6 +97,7 @@ export function CTAButton({
         referralCode: code,
         page: window.location.pathname,
         site: window.location.hostname,
+        referrer: (typeof sessionStorage !== 'undefined' && sessionStorage.getItem('lref')) || '',
       }),
     }).catch(() => {})
   }
