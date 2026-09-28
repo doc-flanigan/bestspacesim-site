@@ -23,7 +23,7 @@ const faqs = [
   },
   {
     q: 'How much does Star Citizen cost to start?',
-    a: 'A starter Game Package from $60 is the minimum purchase, and it is a one-time payment — no subscription is required to play. Signing up with a referral code (like STAR-GCQJ-N6NC) adds a 50,000 UEC enlistment bonus to your account.',
+    a: 'A starter Game Package from $45 (on sale — $60 list price, as of September 2026) is the minimum purchase, and it is a one-time payment — no subscription is required to play. Signing up with a referral code (like STAR-GCQJ-N6NC) adds a 50,000 UEC enlistment bonus to your account.',
   },
   {
     q: 'Can I try Star Citizen for free before buying?',
@@ -100,7 +100,8 @@ export default function WorthItPage() {
         </h2>
         <div className="mt-3 space-y-4 text-base leading-relaxed text-offwhite/85">
           <p>
-            The minimum buy-in is a starter Game Package from $60 — a one-time
+            The minimum buy-in is a starter Game Package from $45 on sale
+            ($60 list) — a one-time
             purchase, no subscription. Everything flyable can eventually be
             earned in-game with aUEC, so the hundred-dollar ships on the store
             are optional pledges, not requirements. Signing up with referral
@@ -119,9 +120,9 @@ export default function WorthItPage() {
             images={[
               {
                 src: '/images/screenshots/getting-started-add-to-cart-citizen-starter-pack.jpg',
-                alt: 'RSI store page for the $60 Citizen Starter Pack with the Add to cart button',
+                alt: 'RSI store page for the Citizen Starter Pack with the Add to cart button',
                 caption:
-                  'The $60 Citizen Starter Pack on the RSI store — a one-time purchase, no subscription.',
+                  'The Citizen Starter Pack on the RSI store — $45 on sale ($60 list), a one-time purchase, no subscription.',
                 width: 952,
                 height: 468,
               },

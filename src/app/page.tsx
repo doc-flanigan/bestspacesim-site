@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     q: 'Can you try Star Citizen for free?',
-    a: 'Yes. Cloud Imperium runs Free Fly events a few times a year — typically Invictus Launch Week in May and the Intergalactic Aerospace Expo in November, plus shorter promo windows. During an event, anyone with a free RSI account gets a loaner ship plus a daily rotating ship roster to try, no purchase required. Between events, playing requires a starter Game Package (from $60).',
+    a: 'Yes. Cloud Imperium runs Free Fly events a few times a year — typically Invictus Launch Week in May and the Intergalactic Aerospace Expo in November, plus shorter promo windows. During an event, anyone with a free RSI account gets a loaner ship plus a daily rotating ship roster to try, no purchase required. Between events, playing requires a starter Game Package (from $45 on sale — $60 list price, as of September 2026).',
   },
   {
     q: 'What should you compare before choosing a space sim?',
@@ -120,11 +120,11 @@ export default function HomePage() {
           </h2>
           <p className="mb-4" style={{ color: '#7a8f7d' }}>
             The cheapest way in is a{' '}
-            <strong style={{ color: '#eef2ee' }}>starter package (from $60)</strong>.
+            <strong style={{ color: '#eef2ee' }}>starter package (from $45 on sale, $60 list)</strong>.
             For most new players, the{' '}
             <strong style={{ color: '#eef2ee' }}>Avenger Titan (Duelist Starter Pack, $75)</strong> is the best
             first ship — versatile enough for every beginner mission type, good cargo
-            capacity, and comfortable to fly. The Aurora Mk II (Citizen Starter Pack, $60) works if you want
+            capacity, and comfortable to fly. The Aurora Mk II (Citizen Starter Pack, $45 on sale — $60 list) works if you want
             the absolute minimum to get in the door.
           </p>
           <div className="mb-6">
@@ -141,7 +141,7 @@ export default function HomePage() {
                   src: '/images/screenshots/aurora-mr.jpg',
                   alt: 'RSI Aurora light starter ship on a landing pad',
                   caption:
-                    'The Aurora — the $60 Citizen Starter Pack minimum buy-in (earlier Aurora MR model shown).',
+                    'The Aurora — the Citizen Starter Pack minimum buy-in, $45 on sale ($60 list) (earlier Aurora MR model shown).',
                   width: 1820,
                   height: 1024,
                 },
