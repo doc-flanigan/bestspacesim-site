@@ -53,7 +53,7 @@ const skepticCase: { heading: string; body: SectionBlock[] }[] = [
   {
     heading: 'What $60 actually gets you',
     body: [
-      'The minimum entry is the $60 Citizen Starter Pack: an Aurora Mk II starter ship, 10,000 starting aUEC, and access to the live game — a one-time purchase with no subscription. Everything beyond that is optional. Nobody needs a $600 ship to play; the whales fund the development, and the $60 player flies in the same universe.',
+      'The minimum entry is the $60 Citizen Starter Pack: an Aurora Mk II starter ship, 10,000 starting UEC, and access to the live game — a one-time purchase with no subscription. Everything beyond that is optional. Nobody needs a $600 ship to play; the whales fund the development, and the $60 player flies in the same universe.',
       {
         images: [
           {
