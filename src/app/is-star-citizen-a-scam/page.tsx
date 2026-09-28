@@ -51,16 +51,16 @@ const skepticCase: { heading: string; body: SectionBlock[] }[] = [
     ],
   },
   {
-    heading: 'What $45 actually gets you',
+    heading: 'What $60 actually gets you',
     body: [
-      'The minimum entry is the $45 Citizen Starter Pack: an Aurora Mk II starter ship, 10,000 starting aUEC, and access to the live game — a one-time purchase with no subscription. Everything beyond that is optional. Nobody needs a $600 ship to play; the whales fund the development, and the $45 player flies in the same universe.',
+      'The minimum entry is the $60 Citizen Starter Pack: an Aurora Mk II starter ship, 10,000 starting aUEC, and access to the live game — a one-time purchase with no subscription. Everything beyond that is optional. Nobody needs a $600 ship to play; the whales fund the development, and the $60 player flies in the same universe.',
       {
         images: [
           {
             src: '/images/screenshots/getting-started-game-package-starter-packs-list.jpg',
-            alt: 'RSI store list of starter Game Packages showing the $45 Citizen Starter Pack alongside other packs',
+            alt: 'RSI store list of starter Game Packages showing the $60 Citizen Starter Pack alongside other packs',
             caption:
-              'The starter Game Packages on the RSI store — entry starts at $45, one-time, no subscription.',
+              'The starter Game Packages on the RSI store — entry starts at $60, one-time, no subscription.',
             width: 1200,
             height: 561,
           },
