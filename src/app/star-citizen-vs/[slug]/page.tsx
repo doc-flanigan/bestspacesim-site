@@ -28,7 +28,8 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
     title,
     description,
     alternates: { canonical: `/star-citizen-vs/${opp.id}` },
-    openGraph: { title, description, type: 'article', images: ['/images/hero/hero-01.jpg'] },
+    openGraph: { title, description, type: 'article',
+      images: [{ url: '/images/og-image.png', width: 1200, height: 630, alt: 'Best Space Sim Games 2026 — independent rankings (unofficial fan site)' }] },
   };
 }
 
