@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     q: 'Can I try Star Citizen for free before buying?',
-    a: 'Yes. Cloud Imperium runs Free Fly events several times a year — typically around Invictus Launch Week in May and the Intergalactic Aerospace Expo in November — during which anyone with a free RSI account can play the live game at no cost, no purchase required. Between events, actual flight is gated to a Game Package purchase.',
+    a: 'Yes. Cloud Imperium runs Free Fly events several times a year — typically around Invictus Launch Week in May (DefenseCon in 2026) and the Intergalactic Aerospace Expo in November — during which anyone with a free RSI account can play the live game at no cost, no purchase required. Between events, actual flight is gated to a Game Package purchase.',
   },
   {
     q: 'Is Star Citizen still in alpha?',

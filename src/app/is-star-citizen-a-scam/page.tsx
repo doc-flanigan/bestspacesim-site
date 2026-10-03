@@ -39,7 +39,7 @@ const skepticCase: { heading: string; body: SectionBlock[] }[] = [
           },
         ],
       },
-      'Squadron 42, the single-player campaign skeptics long called vaporware, is content complete — per the May 2026 Letter From The Chairman, all chapters are fully playable from beginning to end at over forty hours, with polish and bug fixing remaining, and the stated goal is to "push Squadron 42 toward Beta and release in 2026." That 2026 window was first announced at CitizenCon 2954 in October 2024.',
+      'Squadron 42, the single-player campaign skeptics long called vaporware, is content complete — per the May 2026 Letter From The Chairman, all chapters are fully playable from beginning to end at over forty hours, with polish and bug fixing remaining. The 2026 window first announced at CitizenCon 2954 in October 2024 has since been dropped: the August 27, 2026 Letter From The Chairman moved Squadron 42 to a Q2 2027 target (April to June), and CIG has not announced an exact release date.',
       'The honest asterisk: Star Citizen 1.0 — the finished persistent universe — has no official release date. The 2027-2028 figures you may have read come from press interviews, not from an official CIG announcement. Slow and open is not the same thing as fraudulent, but "when is 1.0" genuinely has no answer yet.',
     ],
   },
@@ -78,7 +78,7 @@ const faqs = [
   },
   {
     q: 'Will Star Citizen ever be finished?',
-    a: 'Squadron 42, the single-player campaign, is content complete — all chapters playable at over forty hours — with an official goal to push toward Beta and release in 2026. Star Citizen 1.0, the finished persistent universe, has no official release date; CIG has not announced one. Skepticism about the timeline is reasonable; the claim that nothing will ever ship is contradicted by the playable game that exists today.',
+    a: 'Squadron 42, the single-player campaign, is content complete — all chapters playable at over forty hours — with an official target of Q2 2027 (moved out of 2026 in the August 27, 2026 Letter from the Chairman). Star Citizen 1.0, the finished persistent universe, has no official release date; CIG has not announced one. Skepticism about the timeline is reasonable; the claim that nothing will ever ship is contradicted by the playable game that exists today.',
   },
   {
     q: 'When is Star Citizen 1.0 coming out?',
