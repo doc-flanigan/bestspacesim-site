@@ -103,7 +103,7 @@ const sections: { heading: string; body: SectionBlock[] }[] = [
   {
     heading: 'Try it free during a Free Fly event',
     body: [
-      "Cloud Imperium runs Free Fly events a few times a year — typically Invictus Launch Week in May and the Intergalactic Aerospace Expo in November, plus shorter promo windows in between. During an event, anyone with a free RSI account can play the game's online world: a loaner ship for the duration of the event, plus a daily rotation of additional ships to test fly.",
+      "Cloud Imperium runs Free Fly events a few times a year — typically Invictus Launch Week in May (DefenseCon in 2026) and the Intergalactic Aerospace Expo in November, plus shorter promo windows in between. During an event, anyone with a free RSI account can play the game's online world: a loaner ship for the duration of the event, plus a daily rotation of additional ships to test fly.",
       "If the idea of Star Citizen interests you at all, wait for the next Free Fly and try it. No demo, no time-gated tutorial. Outside an event window, you can still create a free account and look around the website — but actual flight is gated to a starter pack purchase or a Free Fly window.",
     ],
   },
@@ -120,7 +120,7 @@ const faqs = [
   },
   {
     q: 'Can I play Star Citizen for free?',
-    a: 'During a Free Fly event, yes — anyone with a free RSI account can play the live game at no cost. Cloud Imperium runs these several times a year, typically around Invictus in May and IAE in November.',
+    a: 'During a Free Fly event, yes — anyone with a free RSI account can play the live game at no cost. Cloud Imperium runs these several times a year, typically around Invictus/DefenseCon in May and IAE in November.',
   },
 ];
 

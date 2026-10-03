@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     q: 'Can you try Star Citizen for free?',
-    a: 'Yes. Cloud Imperium runs Free Fly events a few times a year — typically Invictus Launch Week in May and the Intergalactic Aerospace Expo in November, plus shorter promo windows. During an event, anyone with a free RSI account gets a loaner ship plus a daily rotating ship roster to try, no purchase required. Between events, playing requires a starter Game Package (from $45 on sale — $60 list price, as of September 2026).',
+    a: 'Yes. Cloud Imperium runs Free Fly events a few times a year — typically Invictus Launch Week in May (DefenseCon in 2026) and the Intergalactic Aerospace Expo in November, plus shorter promo windows. During an event, anyone with a free RSI account gets a loaner ship plus a daily rotating ship roster to try, no purchase required. Between events, playing requires a starter Game Package (from $45 on sale — $60 list price, as of September 2026).',
   },
   {
     q: 'What should you compare before choosing a space sim?',
@@ -360,7 +360,7 @@ function WhyStarCitizen() {
     },
     {
       title: 'A temporary free-play window — when an event is on',
-      body: "Cloud Imperium runs Free Fly events a few times a year — typically Invictus Launch Week in May and the IAE in November, plus shorter promo windows. During an event, anyone with a free RSI account gets a loaner ship plus a daily rotating ship roster to try.",
+      body: "Cloud Imperium runs Free Fly events a few times a year — typically Invictus Launch Week in May (DefenseCon in 2026) and the IAE in November, plus shorter promo windows. During an event, anyone with a free RSI account gets a loaner ship plus a daily rotating ship roster to try.",
     },
   ];
   return (
