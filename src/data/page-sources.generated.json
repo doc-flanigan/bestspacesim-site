@@ -75,6 +75,16 @@
         ]
       },
       {
+        "id": "current-alpha-version-4-10-2",
+        "claim": "The current live Star Citizen build is Alpha 4.10.2, released October 9, 2026 as build 4.10.2-LIVE.12881860; its release notes list Long Term Persistence as preserved (no wipe), with new accounts starting on 20,000 aUEC.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/en/comm-link/Patch-Notes/21351-Star-Citizen-Alpha-4102",
+          "https://robertsspaceindustries.com/patch-notes",
+          "https://status.robertsspaceindustries.com/issues/2026-10-09_live-deployment/index.html"
+        ]
+      },
+      {
         "id": "funding-one-billion-may-2026",
         "claim": "Star Citizen crossed $1 billion in total funding raised on May 24, 2026, from over 6.5 million backer accounts.",
         "status": "verified",
@@ -96,6 +106,14 @@
         "status": "verified",
         "sources": [
           "https://www.gamespress.com/en-US/Cloud-Imperium-Games-Reveals-Over-an-Hour-of-Star-Studded-Space-Advent"
+        ]
+      },
+      {
+        "id": "sq42-release-q2-2027",
+        "claim": "In the August 27, 2026 Letter from the Chairman, CIG moved Squadron 42 from its 2026 target to a Q2 2027 release window.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/en/comm-link/transmission/21301-Letter-From-The-Chairman"
         ]
       },
       {
@@ -131,6 +149,16 @@
         "status": "verified",
         "sources": [
           "https://robertsspaceindustries.com/en/comm-link/Patch-Notes/21330-Star-Citizen-Alpha-4101"
+        ]
+      },
+      {
+        "id": "current-alpha-version-4-10-2",
+        "claim": "The current live Star Citizen build is Alpha 4.10.2, released October 9, 2026 as build 4.10.2-LIVE.12881860; its release notes list Long Term Persistence as preserved (no wipe), with new accounts starting on 20,000 aUEC.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/en/comm-link/Patch-Notes/21351-Star-Citizen-Alpha-4102",
+          "https://robertsspaceindustries.com/patch-notes",
+          "https://status.robertsspaceindustries.com/issues/2026-10-09_live-deployment/index.html"
         ]
       },
       {
@@ -201,6 +229,16 @@
         "status": "verified",
         "sources": [
           "https://robertsspaceindustries.com/en/comm-link/Patch-Notes/21330-Star-Citizen-Alpha-4101"
+        ]
+      },
+      {
+        "id": "current-alpha-version-4-10-2",
+        "claim": "The current live Star Citizen build is Alpha 4.10.2, released October 9, 2026 as build 4.10.2-LIVE.12881860; its release notes list Long Term Persistence as preserved (no wipe), with new accounts starting on 20,000 aUEC.",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/en/comm-link/Patch-Notes/21351-Star-Citizen-Alpha-4102",
+          "https://robertsspaceindustries.com/patch-notes",
+          "https://status.robertsspaceindustries.com/issues/2026-10-09_live-deployment/index.html"
         ]
       },
       {
