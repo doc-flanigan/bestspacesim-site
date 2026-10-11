@@ -22,7 +22,7 @@ const sections = [
   {
     heading: 'Why third-party estimates disagree by 5x',
     body: [
-      'Because CIG publishes no active-player statistic, a cottage industry of "live player count" sites fills the void with estimates. The problem: they disagree with each other by roughly five times — one popular tracker suggests around 13,000 daily players while another puts concurrent players near 63,000 — and none of them disclose a methodology. Star Citizen does not run on Steam, so there is no public concurrency feed to sample.',
+      'Because CIG publishes no active-player statistic, a cottage industry of "live player count" sites fills the void with estimates. The problem: they disagree with each other by roughly five times — one popular tracker suggests around 13,000 daily players while another puts concurrent players near 63,000 — and none of them disclose a methodology. The Star Citizen MMO does not run on Steam, so there is no public concurrency feed to sample. Squadron 42, the separate single-player game from CIG, does have a Steam page (wishlist only, not yet released): iheldtheline.com/steam.',
       'We cite those numbers only as examples of how far apart the guesses are, not as data. When two sources claim to measure the same thing and land 5x apart with no stated method, the honest conclusion is that neither one knows.',
     ],
   },
@@ -42,6 +42,21 @@ const sections = [
   },
 ];
 
+const STEAM_OWNER = 'iheldtheline.com/steam';
+function linkify(text: string) {
+  const i = text.indexOf(STEAM_OWNER);
+  if (i === -1) return text;
+  return (
+    <>
+      {text.slice(0, i)}
+      <a href={`https://${STEAM_OWNER}`} className="text-purple hover:text-purple-dark">
+        {STEAM_OWNER}
+      </a>
+      {text.slice(i + STEAM_OWNER.length)}
+    </>
+  );
+}
+
 const faqs = [
   {
     q: 'How many people play Star Citizen?',
@@ -53,7 +68,7 @@ const faqs = [
   },
   {
     q: 'Are third-party Star Citizen player-count sites accurate?',
-    a: 'There is no way to know, which is the problem: they disagree with each other by roughly five times — around 13,000 daily players on one versus around 63,000 concurrent on another — and none disclose how they arrive at their numbers. Star Citizen is not on Steam, so no public concurrency data exists to check them against.',
+    a: 'There is no way to know, which is the problem: they disagree with each other by roughly five times — around 13,000 daily players on one versus around 63,000 concurrent on another — and none disclose how they arrive at their numbers. Star Citizen is not on Steam, so no public concurrency data exists to check them against. Squadron 42, the separate single-player game from CIG, does have a Steam page (wishlist only, not yet released): iheldtheline.com/steam.',
   },
   {
     q: 'Is Star Citizen dead or dying in 2026?',
@@ -130,7 +145,7 @@ export default function PlayerCountPage() {
             </h2>
             <div className="mt-3 space-y-4 text-base leading-relaxed text-offwhite/85">
               {s.body.map((p, i) => (
-                <p key={i}>{p}</p>
+                <p key={i}>{linkify(p)}</p>
               ))}
             </div>
           </article>
@@ -145,7 +160,7 @@ export default function PlayerCountPage() {
           {faqs.map((f) => (
             <article key={f.q}>
               <h3 className="font-display text-lg font-semibold text-offwhite">{f.q}</h3>
-              <p className="mt-2 text-base leading-relaxed text-offwhite/85">{f.a}</p>
+              <p className="mt-2 text-base leading-relaxed text-offwhite/85">{linkify(f.a)}</p>
             </article>
           ))}
         </div>
