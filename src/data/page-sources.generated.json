@@ -4,11 +4,12 @@
   "routes": {
     "/": [
       {
-        "id": "citizen-starter-pack-60-usd-aurora",
-        "claim": "The Citizen Starter Pack (list price $60 USD) is a game package that includes the RSI Aurora Mk II as the starter ship and full game access.",
+        "id": "first-flight-pack-60-usd-aurora",
+        "claim": "RSI's Star Citizen First Flight Pack is a Star Citizen-only game package that includes one Aurora Mk II, 6 Month Insurance, a Self-Land Hangar, 10,000 UEC and the Star Citizen digital download, plus 30-day loaner access to three more starter ships: Drake Golem (mining), MISC Fortune (salvage) and Crusader Intrepid (cargo hauling).",
         "status": "verified",
         "sources": [
-          "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack"
+          "https://robertsspaceindustries.com/en/pledge/Packages/Star-Citizen-First-Flight-Pack",
+          "https://robertsspaceindustries.com/en/store/pledge/browse/game-packages"
         ]
       },
       {
@@ -17,15 +18,6 @@
         "status": "verified",
         "sources": [
           "https://support.robertsspaceindustries.com/hc/en-us/articles/4412777637271-Does-Star-Citizen-offer-a-free-trial"
-        ]
-      },
-      {
-        "id": "starter-package-from-45-usd",
-        "claim": "The cheapest Star Citizen game package, the Citizen Starter Pack (RSI Aurora Mk II), lists at $60 USD and was on sale for $45 (25% off) as of September 2026; no subscription is required to play.",
-        "status": "verified",
-        "sources": [
-          "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack",
-          "https://robertsspaceindustries.com/pledge/game-packages"
         ]
       }
     ],
@@ -51,22 +43,6 @@
     ],
     "/is-star-citizen-a-scam": [
       {
-        "id": "citizen-starter-pack-10000-uec-6mo-insurance",
-        "claim": "The Citizen Starter Pack includes 10,000 UEC (account currency) and six months of hull insurance on the Aurora Mk II — not Lifetime Insurance.",
-        "status": "verified",
-        "sources": [
-          "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack"
-        ]
-      },
-      {
-        "id": "citizen-starter-pack-60-usd-aurora",
-        "claim": "The Citizen Starter Pack (list price $60 USD) is a game package that includes the RSI Aurora Mk II as the starter ship and full game access.",
-        "status": "verified",
-        "sources": [
-          "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack"
-        ]
-      },
-      {
         "id": "current-alpha-version-4-10-1",
         "claim": "The current live Star Citizen build is Alpha 4.10.1, released September 16, 2026 as build 4.10.1-LIVE.12650677; its release notes list Long Term Persistence as preserved (no wipe), with new accounts starting on 20,000 aUEC.",
         "status": "verified",
@@ -82,6 +58,15 @@
           "https://robertsspaceindustries.com/en/comm-link/Patch-Notes/21351-Star-Citizen-Alpha-4102",
           "https://robertsspaceindustries.com/patch-notes",
           "https://status.robertsspaceindustries.com/issues/2026-10-09_live-deployment/index.html"
+        ]
+      },
+      {
+        "id": "first-flight-pack-60-usd-aurora",
+        "claim": "RSI's Star Citizen First Flight Pack is a Star Citizen-only game package that includes one Aurora Mk II, 6 Month Insurance, a Self-Land Hangar, 10,000 UEC and the Star Citizen digital download, plus 30-day loaner access to three more starter ships: Drake Golem (mining), MISC Fortune (salvage) and Crusader Intrepid (cargo hauling).",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/en/pledge/Packages/Star-Citizen-First-Flight-Pack",
+          "https://robertsspaceindustries.com/en/store/pledge/browse/game-packages"
         ]
       },
       {
@@ -113,28 +98,12 @@
         "claim": "In the August 27, 2026 Letter from the Chairman, CIG moved Squadron 42 from its 2026 target to a Q2 2027 release window.",
         "status": "verified",
         "sources": [
-          "https://robertsspaceindustries.com/en/comm-link/transmission/21301-Letter-From-The-Chairman"
-        ]
-      },
-      {
-        "id": "starter-package-from-45-usd",
-        "claim": "The cheapest Star Citizen game package, the Citizen Starter Pack (RSI Aurora Mk II), lists at $60 USD and was on sale for $45 (25% off) as of September 2026; no subscription is required to play.",
-        "status": "verified",
-        "sources": [
-          "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack",
-          "https://robertsspaceindustries.com/pledge/game-packages"
+          "https://robertsspaceindustries.com/en/comm-link/transmission/21301-Letter-From-The-Chairman",
+          "https://support.robertsspaceindustries.com/hc/en-us/articles/360042914633-Where-can-I-download-Squadron-42"
         ]
       }
     ],
     "/is-star-citizen-worth-it": [
-      {
-        "id": "citizen-starter-pack-60-usd-aurora",
-        "claim": "The Citizen Starter Pack (list price $60 USD) is a game package that includes the RSI Aurora Mk II as the starter ship and full game access.",
-        "status": "verified",
-        "sources": [
-          "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack"
-        ]
-      },
       {
         "id": "crowdfunding-launch-vs-alpha-start",
         "claim": "The Star Citizen crowdfunding campaign launched October 2012, but public alpha testing did not begin until later (Hangar Module 2013, Arena Commander 2014) — 'in open development since 2012' is accurate, 'in public alpha since 2012' is not.",
@@ -159,6 +128,15 @@
           "https://robertsspaceindustries.com/en/comm-link/Patch-Notes/21351-Star-Citizen-Alpha-4102",
           "https://robertsspaceindustries.com/patch-notes",
           "https://status.robertsspaceindustries.com/issues/2026-10-09_live-deployment/index.html"
+        ]
+      },
+      {
+        "id": "first-flight-pack-60-usd-aurora",
+        "claim": "RSI's Star Citizen First Flight Pack is a Star Citizen-only game package that includes one Aurora Mk II, 6 Month Insurance, a Self-Land Hangar, 10,000 UEC and the Star Citizen digital download, plus 30-day loaner access to three more starter ships: Drake Golem (mining), MISC Fortune (salvage) and Crusader Intrepid (cargo hauling).",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/en/pledge/Packages/Star-Citizen-First-Flight-Pack",
+          "https://robertsspaceindustries.com/en/store/pledge/browse/game-packages"
         ]
       },
       {
@@ -203,15 +181,6 @@
           "https://support.robertsspaceindustries.com/hc/en-us/articles/16444523494423-Daily-Life-in-the-Verse",
           "https://support.robertsspaceindustries.com/hc/en-us/articles/360011409454-Buying-Ships-with-aUEC"
         ]
-      },
-      {
-        "id": "starter-package-from-45-usd",
-        "claim": "The cheapest Star Citizen game package, the Citizen Starter Pack (RSI Aurora Mk II), lists at $60 USD and was on sale for $45 (25% off) as of September 2026; no subscription is required to play.",
-        "status": "verified",
-        "sources": [
-          "https://robertsspaceindustries.com/pledge/Packages/Citizen-Starter-Pack",
-          "https://robertsspaceindustries.com/pledge/game-packages"
-        ]
       }
     ],
     "/star-citizen": [
@@ -239,6 +208,15 @@
           "https://robertsspaceindustries.com/en/comm-link/Patch-Notes/21351-Star-Citizen-Alpha-4102",
           "https://robertsspaceindustries.com/patch-notes",
           "https://status.robertsspaceindustries.com/issues/2026-10-09_live-deployment/index.html"
+        ]
+      },
+      {
+        "id": "first-flight-pack-60-usd-aurora",
+        "claim": "RSI's Star Citizen First Flight Pack is a Star Citizen-only game package that includes one Aurora Mk II, 6 Month Insurance, a Self-Land Hangar, 10,000 UEC and the Star Citizen digital download, plus 30-day loaner access to three more starter ships: Drake Golem (mining), MISC Fortune (salvage) and Crusader Intrepid (cargo hauling).",
+        "status": "verified",
+        "sources": [
+          "https://robertsspaceindustries.com/en/pledge/Packages/Star-Citizen-First-Flight-Pack",
+          "https://robertsspaceindustries.com/en/store/pledge/browse/game-packages"
         ]
       },
       {
@@ -290,6 +268,7 @@
         "claim": "Squadron 42 has an official Steam store page (app 4045720, published by Roberts Space Industries, developed by Cloud Imperium Games) that went live on October 10, 2026; it can be wishlisted but not bought, lists a planned release of Q2 2027, Windows only, and notes support for linking a Roberts Space Industries account to a Steam account.",
         "status": "verified",
         "sources": [
+          "https://robertsspaceindustries.com/en/comm-link/transmission/21374-This-Week-In-Star-Citizen",
           "https://store.steampowered.com/app/4045720/",
           "https://store.steampowered.com/api/appdetails?appids=4045720&cc=us&l=en"
         ]
