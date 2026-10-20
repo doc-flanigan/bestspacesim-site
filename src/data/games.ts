@@ -52,7 +52,7 @@ export const GAMES: Game[] = [
     singleplayer: false,
     freeToTry: true,
     priceUSD: 60,
-    priceLabel: 'Starter pack on RSI store · Free during Free Fly events',
+    priceLabel: 'First Flight Pack on RSI store · Free during Free Fly events',
     released: '2012 (alpha, ongoing)',
     developer: 'Cloud Imperium Games',
     image: {

@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     q: 'Can you try Star Citizen for free?',
-    a: 'Yes. Cloud Imperium runs Free Fly events a few times a year — typically Invictus Launch Week in May (DefenseCon in 2026) and the Intergalactic Aerospace Expo in November, plus shorter promo windows. During an event, anyone with a free RSI account gets a loaner ship plus a daily rotating ship roster to try, no purchase required. Between events, playing requires a starter Game Package (from $45 on sale — $60 list price, as of September 2026).',
+    a: 'Yes. Cloud Imperium runs Free Fly events a few times a year — typically Invictus Launch Week in May (DefenseCon in 2026) and the Intergalactic Aerospace Expo in November, plus shorter promo windows. During an event, anyone with a free RSI account gets a loaner ship plus a daily rotating ship roster to try, no purchase required. Between events, playing requires the one starter package RSI sells, the First Flight Pack ($60 list, often on sale for $45, as of October 2026).',
   },
   {
     q: 'What should you compare before choosing a space sim?',
@@ -119,29 +119,20 @@ export default function HomePage() {
             Ready to try it? Here&apos;s where to start.
           </h2>
           <p className="mb-4" style={{ color: '#7a8f7d' }}>
-            The cheapest way in is a{' '}
-            <strong style={{ color: '#eef2ee' }}>starter package (from $45 on sale, $60 list)</strong>.
-            For most new players, the{' '}
-            <strong style={{ color: '#eef2ee' }}>Avenger Titan (Duelist Starter Pack, $75)</strong> is the best
-            first ship — versatile enough for every beginner mission type, good cargo
-            capacity, and comfortable to fly. The Aurora Mk II (Citizen Starter Pack, $45 on sale — $60 list) works if you want
-            the absolute minimum to get in the door.
+            Updated October 2026: RSI now sells one starter package, the{' '}
+            <strong style={{ color: '#eef2ee' }}>Star Citizen First Flight Pack</strong> ($60 list, $45 on sale as of October 2026).
+            It includes the game, an Aurora Mk II starter ship, six months of insurance, and 10,000 UEC.
+            It also gives you 30-day loaner access to three more starter ships, so you can try mining,
+            salvage and cargo hauling before you pick a ship to buy later.
           </p>
           <div className="mb-6">
             <ScreenshotGrid
               images={[
                 {
-                  src: '/images/screenshots/avenger-titan.jpg',
-                  alt: 'Aegis Avenger Titan starter ship on a landing pad',
-                  caption: 'Avenger Titan (Duelist Starter Pack, $75) — our pick for best first ship.',
-                  width: 1820,
-                  height: 1024,
-                },
-                {
                   src: '/images/screenshots/aurora-mr.jpg',
                   alt: 'RSI Aurora light starter ship on a landing pad',
                   caption:
-                    'The Aurora — the Citizen Starter Pack minimum buy-in, $45 on sale ($60 list) (earlier Aurora MR model shown).',
+                    'The Aurora is the starter ship in the First Flight Pack, $45 on sale ($60 list) as of October 2026 (earlier Aurora MR model shown).',
                   width: 1820,
                   height: 1024,
                 },
@@ -176,7 +167,7 @@ export default function HomePage() {
               className="inline-flex items-center text-sm underline underline-offset-4 hover:opacity-80 transition-opacity"
               style={{ color: '#7a8f7d' }}
             >
-              Compare all starter ships →
+              See what the First Flight Pack includes →
             </a>
           </div>
         </div>

@@ -53,14 +53,14 @@ const skepticCase: { heading: string; body: SectionBlock[] }[] = [
   {
     heading: 'What $45 actually gets you',
     body: [
-      'The minimum entry is the Citizen Starter Pack — $45 on sale (25% off its $60 list price as of September 2026): an Aurora Mk II starter ship, 10,000 starting UEC, and access to the live game — a one-time purchase with no subscription. Everything beyond that is optional. Nobody needs a $600 ship to play; the whales fund the development, and the $45 player flies in the same universe.',
+      'The minimum entry is now the Star Citizen First Flight Pack — $45 on sale (25% off its $60 list price as of October 2026): a game download, an Aurora Mk II starter ship, six months of insurance, 10,000 starting UEC, and 30-day loaner access to three more starter ships (RSI’s pledge store lists a Drake Golem for mining, a MISC Fortune for salvage, and a Crusader Intrepid for cargo hauling). It is a one-time purchase with no subscription. Updated October 2026: RSI now sells one starter package, so older guides that list several packs are out of date. Everything beyond that is optional. Nobody needs a $600 ship to play; the whales fund the development, and the $45 player flies in the same universe.',
       {
         images: [
           {
             src: '/images/screenshots/getting-started-game-package-starter-packs-list.jpg',
-            alt: 'RSI store list of starter Game Packages showing the Citizen Starter Pack alongside other packs',
+            alt: 'Earlier screenshot of the RSI store list of starter Game Packages, before RSI replaced them with the single First Flight Pack',
             caption:
-              'The starter Game Packages on the RSI store — entry starts at $45 on sale ($60 list), one-time, no subscription.',
+              'An earlier view of the RSI store, before October 2026. RSI now lists one Game Package, the First Flight Pack: $45 on sale ($60 list), one-time, no subscription.',
             width: 1200,
             height: 561,
           },

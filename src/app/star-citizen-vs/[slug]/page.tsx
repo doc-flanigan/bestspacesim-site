@@ -69,7 +69,7 @@ export default function VersusPage({ params }: { params: { slug: string } }) {
     },
     {
       q: `Which is cheaper, Star Citizen or ${opp.title}?`,
-      a: `${opp.title} is ${price(opp)} (${opp.priceLabel}). Star Citizen's starter pack is $45 on sale ($60 list price, as of September 2026), but you can play the full game free during Free Fly events — so trying Star Citizen can cost nothing.`,
+      a: `${opp.title} is ${price(opp)} (${opp.priceLabel}). Star Citizen's one starter package, the First Flight Pack, is $45 on sale ($60 list price, as of October 2026), but you can play the full game free during Free Fly events — so trying Star Citizen can cost nothing.`,
     },
     {
       q: 'Can you play Star Citizen for free?',

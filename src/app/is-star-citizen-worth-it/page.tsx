@@ -23,7 +23,7 @@ const faqs = [
   },
   {
     q: 'How much does Star Citizen cost to start?',
-    a: 'A starter Game Package from $45 (on sale — $60 list price, as of September 2026) is the minimum purchase, and it is a one-time payment — no subscription is required to play. Signing up with a referral code (like STAR-GCQJ-N6NC) adds a 50,000 UEC enlistment bonus to your account.',
+    a: 'RSI now sells one starter package, the First Flight Pack, at $60 list and often on sale for $45 (as of October 2026). It is the minimum purchase, and it is a one-time payment — no subscription is required to play. Signing up with a referral code (like STAR-GCQJ-N6NC) adds a 50,000 UEC enlistment bonus to your account.',
   },
   {
     q: 'Can I try Star Citizen for free before buying?',
@@ -100,9 +100,10 @@ export default function WorthItPage() {
         </h2>
         <div className="mt-3 space-y-4 text-base leading-relaxed text-offwhite/85">
           <p>
-            The minimum buy-in is a starter Game Package from $45 on sale
-            ($60 list) — a one-time
-            purchase, no subscription. Everything flyable can eventually be
+            The minimum buy-in is the First Flight Pack, RSI&apos;s single starter
+            package: $60 list, $45 on sale as of October 2026. It is a one-time
+            purchase, no subscription, and it includes three 30-day loaner
+            ships to try mining, salvage and cargo hauling. Everything flyable can eventually be
             earned in-game with aUEC, so the hundred-dollar ships on the store
             are optional pledges, not requirements. Signing up with referral
             code STAR-GCQJ-N6NC adds a 50,000 UEC enlistment bonus — a
@@ -120,9 +121,9 @@ export default function WorthItPage() {
             images={[
               {
                 src: '/images/screenshots/getting-started-add-to-cart-citizen-starter-pack.jpg',
-                alt: 'RSI store page for the Citizen Starter Pack with the Add to cart button',
+                alt: 'Earlier screenshot of an RSI starter pack page with the Add to cart button, before the First Flight Pack replaced it',
                 caption:
-                  'The Citizen Starter Pack on the RSI store — $45 on sale ($60 list), a one-time purchase, no subscription.',
+                  'An earlier RSI store page. The First Flight Pack now replaces it: $45 on sale ($60 list) as of October 2026, a one-time purchase, no subscription.',
                 width: 952,
                 height: 468,
               },
