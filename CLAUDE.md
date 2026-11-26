@@ -11,7 +11,7 @@ universe. Funnels to dayonecitizen.com and referral signup.
 Referral code:  STAR-GCQJ-N6NC
 Enlist URL:     https://www.robertsspaceindustries.com/enlist?referral=STAR-GCQJ-N6NC
 Hub:            https://dayonecitizen.com
-Conventions:    E:\Claude Code\sc-portfolio\SHARED_CONVENTIONS.md
+Conventions:    ../SHARED_CONVENTIONS.md
 ```
 
 ## Agentic Build Instructions
@@ -83,7 +83,7 @@ Incremental agents. Confirm each before proceeding.
   --muted: #7a8f7d
 
 ## Network Conventions
-See `E:\Claude Code\sc-portfolio\SHARED_CONVENTIONS.md` for footer spec,
+See `../SHARED_CONVENTIONS.md` for footer spec,
 tone rules, commit convention, tech stack, and agentic build pattern.
 
 ## Click Tracking
@@ -125,8 +125,8 @@ Added 2026-05-17. Every referral CTA click fires a background POST to `/api/log`
 **Do not:**
 - Place cross-portfolio links in footers or link lists — editorial/body copy only
 
-**Full strategy:** `E:\Claude Code\sc-portfolio\docs\seo\README.md`
+**Full strategy:** `../docs/seo/README.md`
 
 ## Claims ledger (network-wide)
 
-Fact-checked claims are tracked in the portfolio claims ledger: `E:\Claude Code\sc-portfolio\docs\claims\` — one md file per claim (canonical text, status, official sources, lastVerified, usage map). Before adding or rewording a factual claim on this site, grep the ledger; a `verified` entry is network canon. Any edit that adds, changes, or removes a factual claim must update the matching claim file's `usage` list (or create the file — see the ledger README.md).
+Fact-checked claims are tracked in the portfolio claims ledger: `../docs/claims/` — one md file per claim (canonical text, status, official sources, lastVerified, usage map). Before adding or rewording a factual claim on this site, grep the ledger; a `verified` entry is network canon. Any edit that adds, changes, or removes a factual claim must update the matching claim file's `usage` list (or create the file — see the ledger README.md).
